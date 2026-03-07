@@ -58,6 +58,29 @@ function CheckIcon() {
 export default function Plans() {
   const [cycle, setCycle] = useState<Cycle>('1 Month');
 
+  const servicesJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'itemListElement': PLANS[cycle].map((plan, index) => ({
+      '@type': 'ListItem',
+      'position': index + 1,
+      'item': {
+        '@type': 'Service',
+        'name': typeof plan.speed === 'number' ? `${plan.speed} Mbps Fiber Internet` : 'Enterprise Fiber Solutions',
+        'description': plan.desc,
+        'provider': {
+          '@type': 'Organization',
+          'name': 'Zuku Fiber Uganda'
+        },
+        'offers': {
+          '@type': 'Offer',
+          'price': plan.price.replace(/,/g, ''),
+          'priceCurrency': 'UGX'
+        }
+      }
+    }))
+  };
+
   const handleSelect = (speed: number | string, price: string) => {
     const isEnterprise = speed === 'Enterprise';
     const msg = encodeURIComponent(
@@ -70,6 +93,10 @@ export default function Plans() {
 
   return (
     <section className="section" id="plans" style={{ background: 'var(--bg-2)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       <div className="container">
 
         {/* Header */}

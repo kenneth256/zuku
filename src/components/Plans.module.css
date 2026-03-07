@@ -15,24 +15,27 @@
 }
 
 .toggleBtn {
-  padding: 0.5rem 1.25rem;
-  border-radius: var(--radius-pill);
-  border: none;
-  font-family: var(--font-head);
-  font-size: 0.8125rem;
-  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  min-height: 44px;
   background: transparent;
-  color: var(--t2);
+  border: none;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s var(--ease);
+  transition: all 0.2s;
+  flex: 1;
 }
 
-.toggleBtn:hover:not(.active) { color: var(--t0); }
+.toggleBtn:hover:not(.active) {
+  color: var(--t0);
+}
 
 .active {
   background: var(--green);
   color: #06090e;
-  box-shadow: 0 2px 8px rgba(79,183,72,0.30);
+  box-shadow: 0 2px 8px rgba(79, 183, 72, 0.30);
 }
 
 /* Grid */
@@ -63,20 +66,23 @@
 
 .popular {
   border-color: var(--green-bd);
-  background: linear-gradient(160deg, rgba(79,183,72,0.06) 0%, var(--bg-3) 50%);
+  background: linear-gradient(160deg, rgba(79, 183, 72, 0.06) 0%, var(--bg-3) 50%);
 }
 
 .popular::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--green), transparent);
 }
 
 .popularTag {
   position: absolute;
-  top: 1rem; right: 1rem;
+  top: 1rem;
+  right: 1rem;
   font-family: var(--font-head);
   font-size: 0.6875rem;
   font-weight: 700;
@@ -187,7 +193,7 @@
 .planBtnPrimary:hover {
   background: var(--green-dk);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(79,183,72,0.25);
+  box-shadow: 0 6px 20px rgba(79, 183, 72, 0.25);
 }
 
 .planBtnGhost {
@@ -216,13 +222,22 @@
   color: var(--t2);
 }
 
-.freeNote strong { color: var(--t0); }
+.freeNote strong {
+  color: var(--t0);
+}
 
 @media (max-width: 1000px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
-  .grid { grid-template-columns: 1fr; }
-  .toggle { flex-wrap: wrap; }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toggle {
+    flex-wrap: wrap;
+  }
 }

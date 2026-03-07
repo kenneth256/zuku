@@ -25,7 +25,7 @@ const COLS = [
       { label: '0775 260 196', href: 'tel:+2560775260196' },
       { label: '0747 505 741', href: 'tel:+2560747505741' },
       { label: 'support@zukufiber.co.ug', href: 'mailto:support@zukufiber.co.ug' },
-      { label: 'Diamond Trust Bldg, KLA', href: '#' },
+      { label: 'Diamond Trust Bldg, KLA', href: '/contact' },
     ],
   },
 ];
@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Columns */}
           {COLS.map(col => (
             <div key={col.heading} className={styles.col}>
-              <h4 className={styles.colHead}>{col.heading}</h4>
+              <h3 className={styles.colHead}>{col.heading}</h3>
               <ul className={styles.colLinks}>
                 {col.links.map(l => (
                   <li key={l.label}>
@@ -70,8 +70,8 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p>© {new Date().getFullYear()} Zuku Fiber Uganda. All rights reserved.</p>
           <div className={styles.legal}>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms &amp; Conditions</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms &amp; Conditions</a>
           </div>
         </div>
       </div>

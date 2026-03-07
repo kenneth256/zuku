@@ -134,9 +134,9 @@ export default function HeroSection() {
           </div>
 
           <h1 className={`${styles.title} animate-up d1`}>
-            Unlimited Home<br />
-            Internet.<br />
-            <span className="grad-g">From 75k/mo.</span>
+            Zuku Fiber:<br />
+            Speed That<br />
+            <span className="grad-g">Defies Gravity.</span>
           </h1>
 
           <p className={`${styles.sub} animate-up d2`}>

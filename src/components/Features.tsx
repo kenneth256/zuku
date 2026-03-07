@@ -77,7 +77,7 @@ export default function Features() {
             >
               {f.icon && (
                 <div className={styles.img3d}>
-                  <Image src={f.icon} alt={f.title} width={64} height={64} />
+                  <Image src={f.icon} alt={`Zuku Fiber - ${f.title}`} width={64} height={64} />
                 </div>
               )}
               {!f.icon && (
