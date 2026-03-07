@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
-  description: 'Experience ultra-fast, truly unlimited zuku fiber internet in Uganda. Best home & business internet deals, 24/7 support, and 99.9% uptime.',
+  description: 'Experience the best unlimited Zuku fiber internet in Uganda. Ultra-fast speeds for home & business, 24/7 support, and 99.9% uptime starting from 75k.',
   keywords: 'Zuku Fiber, Uganda internet, fiber internet Kampala, unlimited internet Uganda, unlimited internet Kampala, affordable internet Uganda, best internet Uganda',
   alternates: {
     canonical: 'https://www.zukufiber.co.ug',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
-    description: 'Experience ultra-fast, truly unlimited zuku fiber internet in Uganda. Best home & business internet deals, 24/7 support, and 99.9% uptime.',
+    description: 'Experience the best unlimited Zuku fiber internet in Uganda. Ultra-fast speeds for home & business, 24/7 support, and 99.9% uptime starting from 75k.',
     url: 'https://www.zukufiber.co.ug',
     siteName: 'Zuku Fiber Uganda',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Zuku Fiber Uganda - Best Unlimited Internet' }],
