@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Zuku Fiber Uganda — Affordable, Unlimited Fiber Internet in Uganda',
+  title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
   description: 'Experience ultra-fast, truly unlimited zuku fiber internet in Uganda. Best home & business internet deals, 24/7 support, and 99.9% uptime.',
-  keywords: 'Zuku Fiber, Uganda internet, fiber internet Kampala, unlimited internet Uganda, unlimited internet Kampala, affordable internet Uganda',
+  keywords: 'Zuku Fiber, Uganda internet, fiber internet Kampala, unlimited internet Uganda, unlimited internet Kampala, affordable internet Uganda, best internet Uganda',
   alternates: {
     canonical: 'https://www.zukufiber.co.ug',
   },
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     'format-detection': 'telephone=no',
   },
   openGraph: {
-    title: 'Zuku Fiber Uganda — Affordable, Unlimited Fiber Internet in Uganda',
+    title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
     description: 'Experience ultra-fast, truly unlimited zuku fiber internet in Uganda. Best home & business internet deals, 24/7 support, and 99.9% uptime.',
     url: 'https://www.zukufiber.co.ug',
     siteName: 'Zuku Fiber Uganda',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Zuku Fiber Uganda - Unlimited Internet' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Zuku Fiber Uganda - Best Unlimited Internet' }],
     locale: 'en_UG',
     type: 'website',
   },
@@ -35,6 +35,13 @@ const jsonLd = [
     'name': 'Zuku Fiber Uganda',
     'url': 'https://www.zukufiber.co.ug',
     'logo': 'https://www.zukufiber.co.ug/logo.png',
+    'contactPoint': {
+      '@type': 'ContactPoint',
+      'telephone': '+2560775260196',
+      'contactType': 'customer support',
+      'areaServed': 'UG',
+      'availableLanguage': 'English'
+    },
     'sameAs': [
       'https://facebook.com/ZukuOfficial',
       'https://x.com/zuku_ug'
@@ -45,6 +52,7 @@ const jsonLd = [
     '@type': 'WebSite',
     'name': 'Zuku Fiber Uganda',
     'url': 'https://www.zukufiber.co.ug',
+    'description': 'Zuku Fiber Uganda offers affordable, unlimited fiber home and business internet with 24/7 support.',
     'potentialAction': {
       '@type': 'SearchAction',
       'target': 'https://www.zukufiber.co.ug/?s={search_term_string}',
@@ -70,6 +78,7 @@ const jsonLd = [
       'latitude': 0.3136,
       'longitude': 32.5811
     },
+    'openingHours': 'Mo-Su 00:00-23:59',
     'openingHoursSpecification': {
       '@type': 'OpeningHoursSpecification',
       'dayOfWeek': [

@@ -1,6 +1,8 @@
 .header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   padding: 1.25rem 0;
   transition: background 0.3s var(--ease), border-color 0.3s var(--ease), padding 0.3s var(--ease);
@@ -49,7 +51,11 @@
 }
 
 /* Nav links */
-.nav { flex: 1; display: flex; justify-content: center; }
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
 .links {
   display: flex;
@@ -63,9 +69,14 @@
   font-weight: 500;
   color: var(--t2);
   transition: color 0.2s var(--ease);
+  padding: 0.625rem 0.5rem;
+  /* ~44px total height with font */
+  display: block;
 }
 
-.link:hover { color: var(--t0); }
+.link:hover {
+  color: var(--t0);
+}
 
 /* CTA */
 .cta {
@@ -84,10 +95,18 @@
   color: var(--green);
   font-family: var(--font-head);
   transition: opacity 0.2s;
+  padding: 0.625rem 0.75rem;
+  min-height: 44px;
 }
 
-.phone:hover { opacity: 0.8; }
+.phone:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 900px) {
-  .nav, .phone { display: none; }
+
+  .nav,
+  .phone {
+    display: none;
+  }
 }

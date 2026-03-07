@@ -65,7 +65,7 @@ export default function Features() {
             Built for how<br />Uganda lives online.
           </h2>
           <p className="section-sub">
-            Every part of our network is engineered for reliability, speed, and the real needs of Kampala households and businesses.
+            Every part of our network is engineered for reliability, speed, and the real needs of Kampala households. Explore our [Unlimited Home Internet plans](#plans) today.
           </p>
         </div>
 

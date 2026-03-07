@@ -3,12 +3,12 @@ import { useState } from 'react';
 import styles from './FAQ.module.css';
 
 const FAQS = [
-  { q: 'What does free installation include?', a: 'Our engineers come to your home, run the fiber cable, install a wall socket, configure your router, set up your Wi-Fi network, and verify everything works — all at no cost.' },
-  { q: 'How long does installation take?', a: 'Most installations are completed in 2–4 hours. Same-day connections are available in most Kampala areas. You\'ll receive a confirmed appointment window.' },
-  { q: 'Is the data truly unlimited?', a: 'Yes. No data caps, no fair-use throttling, no peak-hour restrictions. The speed you pay for is the speed you get, 24 hours a day.' },
-  { q: 'Which areas of Kampala do you cover?', a: 'We serve Kololo, Ntinda, Naguru, Bugolobi, Muyenga, Munyonyo, Lubowa, Kira, and many more. Call 0775 260 196 to verify your specific address.' },
-  { q: 'Can I upgrade or change my plan later?', a: 'Yes — upgrades take effect the same day. Downgrades apply at the start of your next billing cycle. No penalties or admin fees apply.' },
-  { q: 'What happens if my connection goes down?', a: 'Contact our 24/7 support team by call or WhatsApp. Most issues are resolved remotely within 30 minutes. For physical faults, our Kampala team typically arrives within 4 hours.' },
+  { q: 'What does free installation include?', a: 'Our engineers come to your home, run the fiber cable, install a wall socket, and set up your Wi-Fi network. Every plan, including our [Home Fiber](#plans), comes with free installation and a free router.' },
+  { q: 'How long does installation take?', a: 'Most installations are completed in 2–4 hours. Same-day connections are available in many areas. You can check our [Coverage Map](#) or [Contact Support](/contact) to schedule.' },
+  { q: 'Is the data truly unlimited?', a: 'Yes. No data caps or throttling. Our [Unlimited Plans](#plans) deliver fixed speeds 24/7, making them the best choice for Kampala households.' },
+  { q: 'Which areas of Kampala do you cover?', a: 'We serve Kololo, Ntinda, Naguru, Bugolobi, and more. See our [Business Fiber](#plans) options for commercial coverage or WhatsApp us for home queries.' },
+  { q: 'Can I upgrade or change my plan later?', a: 'Yes — upgrades take effect the same day. You can easily switch between our [25 Mbps to 200 Mbps plans](#plans) without any admin fees.' },
+  { q: 'What happens if my connection goes down?', a: 'Contact our 24/7 team. Most issues are fixed in 30 mins. For billing queries, visit our [Payment Options](#payment) page.' },
 ];
 
 export default function FAQ() {
