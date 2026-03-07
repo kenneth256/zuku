@@ -8,8 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.zukufiber.co.ug',
   },
+  verification: {
+    google: 'QW7cYdUvpZOT67N-vUvxMOItYC6YntgzS_BF9MWvm_Q',
+  },
   other: {
-    'google-site-verification': 'QW7cYdUvpZOT67N-vUvxMOItYC6YntgzS_BF9MWvm_Q',
     'theme-color': '#e31d24',
     'format-detection': 'telephone=no',
   },
