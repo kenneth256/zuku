@@ -1,0 +1,92 @@
+.box {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  padding: 5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 30% 50%, rgba(79,183,72,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 75% 40%, rgba(0,174,239,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 680px;
+}
+
+.title {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.sub {
+  font-size: 1.0625rem;
+  color: var(--t2);
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+/* Contact bar */
+.contactBar {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid var(--border);
+  flex: 1;
+  min-width: 180px;
+  transition: background 0.2s var(--ease);
+}
+
+.contactItem:last-child { border-right: none; }
+
+.contactItem:hover { background: var(--bg-3); }
+
+.contactIcon { font-size: 1.125rem; flex-shrink: 0; }
+
+.contactVal {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--t0);
+  font-family: var(--font-head);
+}
+
+.contactSub { font-size: 0.75rem; color: var(--t3); margin-top: 0.125rem; }
+
+@media (max-width: 768px) {
+  .box { padding: 3rem 1.75rem; }
+  .contactBar { flex-direction: column; }
+  .contactItem { border-right: none; border-bottom: 1px solid var(--border); }
+  .contactItem:last-child { border-bottom: none; }
+}

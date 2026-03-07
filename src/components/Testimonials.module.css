@@ -1,0 +1,55 @@
+.header { max-width: 480px; margin-bottom: 3.5rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease-out);
+}
+
+.card:hover {
+  border-color: var(--border-2);
+  transform: translateY(-4px);
+}
+
+.stars { display: flex; gap: 0.2rem; font-size: 0.875rem; }
+
+.quote {
+  font-size: 0.9375rem;
+  color: var(--t1);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.author { display: flex; align-items: center; gap: 0.875rem; }
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--t0);
+  font-family: var(--font-head);
+}
+
+.role { font-size: 0.8125rem; color: var(--t3); margin-top: 0.125rem; }
+
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }

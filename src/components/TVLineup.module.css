@@ -1,0 +1,92 @@
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.perks li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--t1);
+}
+
+/* Channels */
+.channels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.channelGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem;
+}
+
+.chip {
+  padding: 0.625rem 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--font-head);
+  color: var(--t2);
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all 0.2s var(--ease);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chip:hover {
+  border-color: var(--blue-bd);
+  color: var(--blue);
+  background: var(--blue-bg);
+}
+
+.moreChip {
+  background: var(--blue-bg);
+  border-color: var(--blue-bd);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.tvNote {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--t3);
+  font-weight: 500;
+}
+
+.tvNoteDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: blink 2s ease-in-out infinite;
+}
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; gap: 3rem; }
+  .channelGrid { grid-template-columns: repeat(3, 1fr); }
+}
