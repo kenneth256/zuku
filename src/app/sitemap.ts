@@ -1,32 +1,30 @@
-import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.zukufiber.co.ug';
-
   return [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: 'https://zukufiberuganda.vercel.app',
+      lastModified: new Date('2026-03-20'),
+      changeFrequency: 'yearly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      url: 'https://zukufiberuganda.vercel.app/contact',
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
+      url: 'https://zukufiberuganda.vercel.app/privacy',
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'yearly',
-      priority: 0.3,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/terms`,
-      lastModified: new Date(),
+      url: 'https://zukufiberuganda.vercel.app/terms',
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'yearly',
-      priority: 0.3,
+      priority: 0.9,
     },
-  ];
+  ]
 }
