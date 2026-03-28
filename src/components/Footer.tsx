@@ -47,7 +47,7 @@ export default function Footer() {
             </p>
             <div className={styles.social}>
               {[['FB', 'https://facebook.com/ZukuOfficial'], ['X', 'https://x.com/zuku_ug'], ['IG', '#'], ['WA', 'https://wa.me/2560775260196']].map(([l, h]) => (
-                <a key={l} href={h} className={styles.socialBtn} target="_blank" rel="noopener">{l}</a>
+                <a key={l} href={h} className={styles.socialBtn} target="_blank" rel="noopener" style={{ display: 'inline-flex', minWidth: '44px', minHeight: '44px', alignItems: 'center', justifyContent: 'center' }}>{l}</a>
               ))}
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
               <ul className={styles.colLinks}>
                 {col.links.map(l => (
                   <li key={l.label}>
-                    <a href={l.href} className={styles.colLink}>{l.label}</a>
+                    <a href={l.href} className={styles.colLink} style={{ display: 'inline-flex', minHeight: '44px', alignItems: 'center', padding: '0.25rem 0' }}>{l.label}</a>
                   </li>
                 ))}
               </ul>
@@ -78,8 +78,8 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p>© {new Date().getFullYear()} Zuku Fiber Uganda. All rights reserved.</p>
           <div className={styles.legal}>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/terms">Terms &amp; Conditions</a>
+            <a href="/privacy" style={{ display: 'inline-flex', minHeight: '44px', alignItems: 'center', padding: '0 0.5rem' }}>Privacy Policy</a>
+            <a href="/terms" style={{ display: 'inline-flex', minHeight: '44px', alignItems: 'center', padding: '0 0.5rem' }}>Terms &amp; Conditions</a>
           </div>
         </div>
       </div>

@@ -1,9 +1,24 @@
 import type { Metadata } from 'next';
+import { Inter, Space_Grotesk } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
+
+const inter = Inter({ 
+  subsets: ['latin'], 
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ['latin'], 
+  weight: ['500', '600', '700'],
+  display: 'swap', 
+  variable: '--font-head' 
+});
 
 export const metadata: Metadata = {
   title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
-  description: 'Experience the best unlimited Zuku fiber internet in Uganda. Ultra-fast speeds for home & business, 24/7 support, and 99.9% uptime starting from 75k.',
+  description: 'Experience the best unlimited home internet in Uganda with Zuku Fiber. Ultra-fast speeds, 24/7 support, and 99.9% uptime starting from 75k.',
   keywords: 'Zuku Fiber, Uganda internet, fiber internet Kampala, unlimited internet Uganda, unlimited internet Kampala, affordable internet Uganda, best internet Uganda',
   alternates: {
     canonical: 'https://www.zukufiber.co.ug',
@@ -17,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
-    description: 'Experience the best unlimited Zuku fiber internet in Uganda. Ultra-fast speeds for home & business, 24/7 support, and 99.9% uptime starting from 75k.',
+    description: 'Experience the best unlimited home internet in Uganda with Zuku Fiber. Ultra-fast speeds, 24/7 support, and 99.9% uptime starting from 75k.',
     url: 'https://www.zukufiber.co.ug',
     siteName: 'Zuku Fiber Uganda',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Zuku Fiber Uganda - Best Unlimited Internet' }],
@@ -37,7 +52,7 @@ const jsonLd = [
     'name': 'Zuku Fiber Uganda',
     'url': 'https://www.zukufiber.co.ug',
     'logo': 'https://www.zukufiber.co.ug/logo.png',
-    'description': 'Zuku Fiber Uganda offers the best, unlimited fiber home and business internet with zero data caps, symmetrical speeds, and 24/7 dedicated support.',
+    'description': 'Zuku Fiber Uganda offers the best unlimited home internet with zero data caps, symmetrical speeds, and 24/7 dedicated support.',
     'contactPoint': {
       '@type': 'ContactPoint',
       'telephone': '+2560775260196',
@@ -55,7 +70,7 @@ const jsonLd = [
     '@type': 'WebSite',
     'name': 'Zuku Fiber Uganda',
     'url': 'https://www.zukufiber.co.ug',
-    'description': 'Zuku Fiber Uganda offers affordable, unlimited fiber home and business internet with 24/7 support.',
+    'description': 'Zuku Fiber Uganda offers affordable, unlimited home internet with 24/7 support and guaranteed uptime.',
     'potentialAction': {
       '@type': 'SearchAction',
       'target': 'https://www.zukufiber.co.ug/?s={search_term_string}',
@@ -101,17 +116,22 @@ const jsonLd = [
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
         <script
-          async
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body style={{ fontFamily: 'var(--font-inter), sans-serif', WebkitFontSmoothing: 'antialiased' }}>
+        <Script
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-D4D1HRPXEC"
         />
-        <script
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -121,7 +141,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
-        <script
+        <Script
+          id="gtm-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -130,12 +152,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WRMRV9QW');`,
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WRMRV9QW"

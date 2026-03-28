@@ -141,7 +141,7 @@ export default function HeroSection() {
 
           <p className={`${styles.sub} animate-up d2`}>
             Free installation. Free router. Free TV channels.
-            No contracts, no throttling — just fast fiber for your home.
+            No contracts, no throttling — just fast, unlimited home internet for you.
           </p>
 
           <div className={`${styles.actions} animate-up d3`}>
@@ -213,7 +213,7 @@ export default function HeroSection() {
           {/* Floating number badge */}
           <div className={styles.badge}>
             <span className={styles.badgeDot} />
-            <span>+50,000 happy homes</span>
+            <span>+50,000 unlimited home internet connections</span>
           </div>
         </div>
 

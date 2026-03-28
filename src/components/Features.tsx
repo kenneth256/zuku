@@ -9,7 +9,7 @@ const FEATURES = [
     icon: '/assets/3d/speed.png',
     color: 'green',
     title: 'Zero Throttling. Ever.',
-    body: 'Your 100 Mbps plan delivers 100 Mbps at 9 PM on a Friday. We never artificially restrict bandwidth during peak hours. What you pay for is what you always get.',
+    body: 'Your unlimited home internet plan delivers 100 Mbps at 9 PM on a Friday. We never artificially restrict bandwidth during peak hours.',
   },
   {
     size: 'medium',
@@ -65,7 +65,7 @@ export default function Features() {
             Built for how<br />Uganda lives online.
           </h2>
           <p className="section-sub">
-            Every part of our network is engineered for reliability, speed, and the real needs of Kampala households. Explore our [Unlimited Home Internet plans](#plans) today.
+            Every part of our unlimited home internet network is engineered for reliability, speed, and exactly what Kampala households need.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function Features() {
             >
               {f.icon && (
                 <div className={styles.img3d}>
-                  <Image src={f.icon} alt={`Zuku Fiber - ${f.title}`} width={64} height={64} />
+                  <Image src={f.icon} alt={`Zuku Fiber unlimited home internet - ${f.title}`} width={64} height={64} />
                 </div>
               )}
               {!f.icon && (
