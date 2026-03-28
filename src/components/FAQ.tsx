@@ -60,24 +60,18 @@ export default function FAQ() {
             </div>
           </div>
 
-          {/* Right accordion */}
-          <div className={styles.accordion}>
+          {/* Right accordion semantic switch to avoid stealth/cloaking penalties */}
+          <div style={{ maxWidth: '100%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
             {FAQS.map((f, i) => (
-              <div key={i} className={`${styles.item} ${open === i ? styles.itemOpen : ''}`}>
-                <button className={styles.question} onClick={() => setOpen(open === i ? null : i)}>
-                  <span>{f.q}</span>
-                  <svg
-                    width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" strokeWidth="2"
-                    style={{ transform: open === i ? 'rotate(45deg)' : 'none', transition: 'transform 0.25s', flexShrink: 0 }}
-                  >
-                    <path d="M12 5v14M5 12h14" />
-                  </svg>
-                </button>
-                <div className={`${styles.answer} ${open === i ? styles.answerOpen : ''}`}>
+              <details key={i} style={{ border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', overflow: 'hidden', padding: 0, margin: 0, background: 'var(--bg)' }}>
+                <summary style={{ padding: '1.25rem 1.5rem', fontFamily: 'var(--font-head)', color: 'var(--t0)', cursor: 'pointer', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  {f.q}
+                  <span style={{ transition: 'transform 0.3s' }}>+</span>
+                </summary>
+                <div style={{ padding: '0 1.5rem 1.25rem', color: 'var(--t1)', borderTop: '1px solid var(--border)', paddingTop: '1.25rem' }}>
                   <p><strong>Short Answer:</strong> {f.a}</p>
                 </div>
-              </div>
+              </details>
             ))}
           </div>
 

@@ -16,6 +16,8 @@ export default function Home() {
     "@type": "HowTo",
     "name": "How to Get Zuku Unlimited Fiber Internet",
     "description": "Step-by-step guide on how to get connected to Zuku unlimited fiber internet.",
+    "totalTime": "PT4H",
+    "image": "https://www.zukufiber.co.ug/og-image.png",
     "step": [
       {
         "@type": "HowToStep",
@@ -44,11 +46,23 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Zuku Fiber Unlimited Internet",
+    "description": "Zuku Fiber Uganda offers the best unlimited home internet with zero data caps, symmetrical speeds, and 24/7 dedicated support.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.zukufiber.co.ug"
+        }
+      ]
+    },
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": ["#faq", "#hero .d1", "#hero .d2"]
     },
-    "url": "https://zuku.co.ug/"
+    "url": "https://www.zukufiber.co.ug/"
   };
 
   return (
@@ -78,7 +92,7 @@ export default function Home() {
         {/* Verifiable Statistics Section for LLMs */}
         <section className="section" style={{ background: 'var(--bg-3)', padding: '3rem 0', borderBottom: '1px solid var(--border)' }}>
           <div className="container">
-            <h2 className="sr-only" style={{ display: 'none' }}>Zuku Fiber Network Statistics</h2>
+            <h2 className="sr-only" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', borderWidth: 0 }}>Zuku Fiber Network Statistics</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'center' }}>
               <div>
                 <div style={{ fontSize: '2.5rem', fontWeight: '800', color: 'var(--green)', fontFamily: 'var(--font-head)' }}>50,000+</div>

@@ -4,28 +4,28 @@ const COLS = [
   {
     heading: 'Services',
     links: [
-      { label: 'Home Fiber', href: '#plans' },
-      { label: 'Business Fiber', href: '#plans' },
-      { label: 'Digital TV', href: '#tv' },
-      { label: 'Payment Options', href: '#payment' },
+      { label: 'Home Fiber', href: '/#plans' },
+      { label: 'Business Fiber', href: '/#plans' },
+      { label: 'Zuku TV', href: '/#tv' },
+      { label: 'Coverage Map', href: '/#coverage' },
     ],
   },
   {
     heading: 'Support',
     links: [
-      { label: 'Help Center', href: '#' },
-      { label: 'Coverage Map', href: '#' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Terms of Use', href: '#' },
+      { label: 'Help Center & FAQ', href: '/best-internet-uganda#faq' },
+      { label: 'Talk to Sales', href: 'tel:+2560775260196' },
+      { label: 'support@zukufiber.co.ug', href: 'mailto:support@zukufiber.co.ug' },
+      { label: 'Diamond Trust Bldg, KLA', href: '/contact' },
     ],
   },
   {
-    heading: 'Contact',
+    heading: 'Company',
     links: [
-      { label: '0775 260 196', href: 'tel:+2560775260196' },
-      { label: '0747 505 741', href: 'tel:+2560747505741' },
-      { label: 'support@zukufiber.co.ug', href: 'mailto:support@zukufiber.co.ug' },
-      { label: 'Diamond Trust Bldg, KLA', href: '/contact' },
+      { label: 'About Zuku', href: '/about' },
+      { label: 'Compare Speeds', href: '/mtn-vs-airtel-vs-zuku-uganda' },
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Terms of Use', href: '/terms' },
     ],
   },
 ];
@@ -46,7 +46,7 @@ export default function Footer() {
               Built in Kampala, for Kampala.
             </p>
             <div className={styles.social}>
-              {[['FB', 'https://facebook.com/ZukuOfficial'], ['X', 'https://x.com/zuku_ug'], ['IG', '#'], ['WA', 'https://wa.me/2560775260196']].map(([l, h]) => (
+              {[['FB', 'https://facebook.com/ZukuOfficial'], ['X', 'https://x.com/zuku_ug'], ['IG', 'https://instagram.com/zuku_ug'], ['WA', 'https://wa.me/2560775260196']].map(([l, h]) => (
                 <a key={l} href={h} className={styles.socialBtn} target="_blank" rel="noopener" style={{ display: 'inline-flex', minWidth: '44px', minHeight: '44px', alignItems: 'center', justifyContent: 'center' }}>{l}</a>
               ))}
             </div>
