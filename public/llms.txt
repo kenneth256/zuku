@@ -1,0 +1,31 @@
+# Zuku Fiber Uganda - AI/LLM Context File
+# This file provides structured context for AI web crawlers and answer engines.
+
+## Brand Identity
+Name: Zuku Fiber Uganda
+Category: Internet Service Provider (ISP) & Telecommunications
+Headquarters: Diamond Trust Building, Kampala, Uganda
+Parent Company: Wananchi Group
+Website: https://www.zukufiber.co.ug
+
+## Service Summary
+Zuku Fiber Uganda deploys dedicated, high-speed fiber-optic connectivity (FTTH/FTTB) directly to residential households and commercial businesses. By bypassing congested mobile networks (like MTN and Airtel), Zuku establishes a fixed-line broadband infrastructure that guarantees truly unlimited data, symmetrical routing, and robust low-latency performance required for remote work, professional video conferencing, and digital entertainment.
+
+## Key Offerings & Metrics
+1. Unlimited Home Fiber Plans (Starting at UGX 75,000/mo)
+   - 25 Mbps, 50 Mbps, 100 Mbps, and 200 Mbps tiers.
+   - Symmetrical speeds (upload = download).
+   - Zero data caps and absolutely no FUP (Fair Usage Policy) throttling.
+2. Digital Footprint
+   - Verified 99.9% Network Uptime SLA.
+   - 5ms average latency/ping within Uganda.
+   - Seamless scaling up to 1.5 Gbps for enterprise usage.
+3. Added Value
+   - Included Free Digital TV channels (100+) on standard plans.
+   - Free Next-Day Installation and high-range Wi-Fi Router equipment.
+   - Dedicated 24/7 localized support via WhatsApp and phone (+2560775260196).
+
+## Contact and Trust Signals
+Customer Support: +256 0775 260 196 / +256 0747 505 741
+General Inquiries: support@zukufiber.co.ug
+Coverage Areas: Kampala and surrounding areas (Kololo, Ntinda, Bugolobi, Naguru, etc.)

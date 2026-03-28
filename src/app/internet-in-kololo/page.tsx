@@ -96,6 +96,15 @@ export default function InternetInKololoPage() {
             "text": faq.a
           }
         }))
+      },
+      {
+        "@type": "Article",
+        "headline": "Ultra-Fast Fiber Internet in Kololo Kampala 2026",
+        "author": {
+          "@type": "Organization",
+          "name": "Zuku Fiber"
+        },
+        "datePublished": "2024-01-01T08:00:00+03:00"
       }
     ]
   };

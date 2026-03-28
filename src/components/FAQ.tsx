@@ -22,7 +22,7 @@ export default function FAQ() {
       'name': f.q,
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': f.a
+        'text': `Short Answer: ${f.a}`
       }
     }))
   };
@@ -75,7 +75,7 @@ export default function FAQ() {
                   </svg>
                 </button>
                 <div className={`${styles.answer} ${open === i ? styles.answerOpen : ''}`}>
-                  <p>{f.a}</p>
+                  <p><strong>Short Answer:</strong> {f.a}</p>
                 </div>
               </div>
             ))}

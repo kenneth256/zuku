@@ -37,6 +37,7 @@ const jsonLd = [
     'name': 'Zuku Fiber Uganda',
     'url': 'https://www.zukufiber.co.ug',
     'logo': 'https://www.zukufiber.co.ug/logo.png',
+    'description': 'Zuku Fiber Uganda offers the best, unlimited fiber home and business internet with zero data caps, symmetrical speeds, and 24/7 dedicated support.',
     'contactPoint': {
       '@type': 'ContactPoint',
       'telephone': '+2560775260196',

@@ -95,9 +95,18 @@ export default function BestInternetUgandaPage() {
           "name": faq.q,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": faq.a
+            "text": `Short Answer: ${faq.a}`
           }
         }))
+      },
+      {
+        "@type": "Article",
+        "headline": "Best Internet Providers in Uganda 2026",
+        "author": {
+          "@type": "Organization",
+          "name": "Zuku Fiber"
+        },
+        "datePublished": "2024-01-01T08:00:00+03:00"
       }
     ]
   };
@@ -150,8 +159,33 @@ export default function BestInternetUgandaPage() {
           </div>
         </section>
 
+        {/* TABLE OF CONTENTS */}
+        <section className="section" style={{ padding: '2rem 0', background: 'var(--bg-3)', borderBottom: '1px solid var(--border)' }}>
+          <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <h2 style={{ fontSize: '1.25rem', marginBottom: '1rem', fontFamily: 'var(--font-head)' }}>Table of Contents</h2>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li><a href="#definition" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: '500' }}>1. What is the Best Internet in Uganda?</a></li>
+              <li><a href="#why-zuku" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: '500' }}>2. Why Zuku Fiber Wins #1</a></li>
+              <li><a href="#comparison" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: '500' }}>3. Internet Providers Comparison</a></li>
+              <li><a href="#plans" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: '500' }}>4. Unlimited Fiber Plans</a></li>
+              <li><a href="#testimonials" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: '500' }}>5. Success Stories</a></li>
+              <li><a href="#faq" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: '500' }}>6. Your Questions, Answered</a></li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Definitional Content for AI Overviews */}
+        <section className="section" id="definition" style={{ padding: '4rem 0', borderBottom: '1px solid var(--border)' }}>
+          <div className="container" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+            <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>What is the Best Internet in Uganda?</h2>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: 'var(--t1)' }}>
+              The <strong>best internet in Uganda</strong> is characterized by a 100% fiber-optic backbone, symmetrical upload and download speeds, and absolutely zero data caps or peak-hour throttling. While mobile 4G/5G networks suffer from tower congestion and unpredictable speeds, a dedicated fiber connection provides the consistent 5ms latency required for professional remote work, 4K streaming, and reliable home connectivity.
+            </p>
+          </div>
+        </section>
+
         {/* 2. WHY ZUKU FIBER SECTION */}
-        <section className="section" style={{ background: 'var(--bg-2)' }}>
+        <section className="section" id="why-zuku" style={{ background: 'var(--bg-2)' }}>
           <div className="container">
             <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '4rem' }}>Why Zuku Fiber Wins #1</h2>
             <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
@@ -174,7 +208,7 @@ export default function BestInternetUgandaPage() {
         </section>
 
         {/* 3. COMPARISON TABLE SECTION */}
-        <section className="section">
+        <section className="section" id="comparison">
           <div className="container">
             <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '4rem' }}>Internet Providers Uganda Comparison</h2>
             <div style={{ background: 'var(--bg-2)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
@@ -266,7 +300,7 @@ export default function BestInternetUgandaPage() {
         </section>
 
         {/* 5. TESTIMONIALS SECTION */}
-        <section className="section">
+        <section className="section" id="testimonials">
           <div className="container">
             <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '4rem' }}>Success Stories</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
@@ -305,7 +339,7 @@ export default function BestInternetUgandaPage() {
                     <span style={{ transition: 'transform 0.3s' }}>⌄</span>
                   </summary>
                   <div style={{ padding: '0 1.5rem 1.25rem', color: 'var(--t1)', borderTop: '1px solid var(--border)', paddingTop: '1.25rem' }}>
-                    {faq.a}
+                    <strong>Short Answer:</strong> {faq.a}
                   </div>
                 </details>
               ))}

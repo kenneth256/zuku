@@ -102,6 +102,15 @@ export default function FiberInternetKampalaPage() {
             "text": faq.a
           }
         }))
+      },
+      {
+        "@type": "Article",
+        "headline": "Fiber Internet in Kampala 2026",
+        "author": {
+          "@type": "Organization",
+          "name": "Zuku Fiber"
+        },
+        "datePublished": "2024-01-01T08:00:00+03:00"
       }
     ]
   };
