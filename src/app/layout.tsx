@@ -120,13 +120,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script defer src="https://www.googletagmanager.com/gtag/js?id=G-D4D1HRPXEC" />
-        <script dangerouslySetInnerHTML={{ __html: `
+        <script defer dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-D4D1HRPXEC');
         `}} />
-        <script dangerouslySetInnerHTML={{ __html: `
+        <script defer dangerouslySetInnerHTML={{ __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -147,7 +147,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <a href="#hero" className="skip-to-content">Skip to Main Content</a>
+        <a href="#hero" className="skip-to-content" style={{ display: 'inline-flex', minHeight: '44px', minWidth: '44px', alignItems: 'center', padding: '12px 16px' }}>Skip to Main Content</a>
         {children}
       </body>
     </html>
