@@ -1,107 +1,8 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  /* ── Minimal 3D particle field via vanilla Three.js CDN ── */
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    let animId: number;
-    let THREE: typeof import('three') | null = null;
-
-    const init = () => {
-      const T = (window as any).THREE;
-      if (!T) return;
-      THREE = T;
-
-      const renderer = new T.WebGLRenderer({ canvas, alpha: true, antialias: true });
-      renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-      const setSize = () => {
-        renderer.setSize(canvas.parentElement!.clientWidth, canvas.parentElement!.clientHeight);
-        camera.aspect = canvas.parentElement!.clientWidth / canvas.parentElement!.clientHeight;
-        camera.updateProjectionMatrix();
-      };
-
-      const scene = new T.Scene();
-      const camera = new T.PerspectiveCamera(55, 1, 0.1, 200);
-      camera.position.z = 50;
-      setSize();
-
-      /* Particles */
-      const count = 1400;
-      const pos = new Float32Array(count * 3);
-      const col = new Float32Array(count * 3);
-      const palette = [
-        new T.Color('#4fb748'), new T.Color('#00aeef'),
-        new T.Color('#fff200'), new T.Color('#2e3192'),
-      ];
-      for (let i = 0; i < count; i++) {
-        pos[i * 3] = (Math.random() - 0.5) * 140;
-        pos[i * 3 + 1] = (Math.random() - 0.5) * 140;
-        pos[i * 3 + 2] = (Math.random() - 0.5) * 140;
-        const c = palette[Math.floor(Math.random() * 4)];
-        col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b;
-      }
-      const geo = new T.BufferGeometry();
-      geo.setAttribute('position', new T.BufferAttribute(pos, 3));
-      geo.setAttribute('color', new T.BufferAttribute(col, 3));
-      const points = new T.Points(geo, new T.PointsMaterial({ size: 0.28, vertexColors: true, transparent: true, opacity: 0.55 }));
-      scene.add(points);
-
-      /* Rings */
-      const mkRing = (r: number, col: number, rx: number, op: number) => {
-        const m = new T.Mesh(new T.TorusGeometry(r, 0.07, 6, 80), new T.MeshBasicMaterial({ color: col, transparent: true, opacity: op }));
-        m.rotation.x = rx;
-        return m;
-      };
-      const r1 = mkRing(18, 0x4fb748, 0.5, 0.14);
-      const r2 = mkRing(26, 0x00aeef, 1.0, 0.09);
-      scene.add(r1, r2);
-
-      let mouse = { x: 0, y: 0 };
-      const onMouse = (e: MouseEvent) => {
-        mouse.x = (e.clientX / window.innerWidth - 0.5) * 2;
-        mouse.y = -(e.clientY / window.innerHeight - 0.5) * 2;
-      };
-      window.addEventListener('mousemove', onMouse);
-      window.addEventListener('resize', setSize);
-
-      let t = 0;
-      const tick = () => {
-        animId = requestAnimationFrame(tick);
-        t += 0.003;
-        points.rotation.y = t * 0.06;
-        points.rotation.x = t * 0.02;
-        r1.rotation.z = t * 0.18;
-        r2.rotation.z = -t * 0.10;
-        camera.position.x += (mouse.x * 6 - camera.position.x) * 0.02;
-        camera.position.y += (mouse.y * 4 - camera.position.y) * 0.02;
-        camera.lookAt(0, 0, 0);
-        renderer.render(scene, camera);
-      };
-      tick();
-
-      return () => {
-        cancelAnimationFrame(animId);
-        window.removeEventListener('mousemove', onMouse);
-        window.removeEventListener('resize', setSize);
-        renderer.dispose();
-      };
-    };
-
-    if ((window as any).THREE) {
-      return init() ?? undefined;
-    } else {
-      const script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
-      script.onload = () => init();
-      document.head.appendChild(script);
-    }
-  }, []);
 
   /* ── Scroll reveal ── */
   useEffect(() => {
@@ -116,12 +17,47 @@ export default function HeroSection() {
 
   return (
     <section className={styles.hero} id="hero">
-      {/* Background 3D canvas */}
-      <div className={styles.canvasWrap}>
-        <canvas ref={canvasRef} className={styles.canvas} />
+
+      {/* ── Light rays ── */}
+      <div className={styles.rays} aria-hidden="true">
+        <span className={`${styles.ray} ${styles.ray1}`} />
+        <span className={`${styles.ray} ${styles.ray2}`} />
+        <span className={`${styles.ray} ${styles.ray3}`} />
+        <span className={`${styles.ray} ${styles.ray4}`} />
+        <span className={`${styles.ray} ${styles.ray5}`} />
+        <span className={`${styles.ray} ${styles.ray6}`} />
       </div>
 
-      {/* Subtle gradient glow */}
+      {/* ── Floating objects ── */}
+      <div className={styles.floaters} aria-hidden="true">
+        {/* Orbs */}
+        <div className={`${styles.orb} ${styles.orb1}`} />
+        <div className={`${styles.orb} ${styles.orb2}`} />
+        <div className={`${styles.orb} ${styles.orb3}`} />
+        {/* Geometric rings */}
+        <div className={`${styles.ring} ${styles.ringA}`} />
+        <div className={`${styles.ring} ${styles.ringB}`} />
+        {/* Speed dots */}
+        <div className={`${styles.dot} ${styles.dot1}`} />
+        <div className={`${styles.dot} ${styles.dot2}`} />
+        <div className={`${styles.dot} ${styles.dot3}`} />
+        <div className={`${styles.dot} ${styles.dot4}`} />
+        {/* Floating cards/tiles */}
+        <div className={`${styles.tile} ${styles.tile1}`}>
+          <span className={styles.tileIcon}>⚡</span>
+          <span className={styles.tileText}>1.5 Gbps</span>
+        </div>
+        <div className={`${styles.tile} ${styles.tile2}`}>
+          <span className={styles.tileIcon}>📡</span>
+          <span className={styles.tileText}>Free Router</span>
+        </div>
+        <div className={`${styles.tile} ${styles.tile3}`}>
+          <span className={styles.tileIcon}>🔒</span>
+          <span className={styles.tileText}>No Contracts</span>
+        </div>
+      </div>
+
+      {/* ── Radial glow ── */}
       <div className={styles.glow} />
 
       <div className={`container ${styles.inner}`}>

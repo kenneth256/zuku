@@ -5,7 +5,7 @@ const COLS = [
     heading: 'Services',
     links: [
       { label: 'Home Fiber', href: '/#plans' },
-      { label: 'Business Fiber', href: '/#plans' },
+      { label: 'Business Internet', href: '/business-solutions' },
       { label: 'Zuku TV', href: '/#tv' },
       { label: 'Coverage Map', href: '/#coverage' },
     ],
@@ -23,6 +23,7 @@ const COLS = [
     heading: 'Company',
     links: [
       { label: 'About Zuku', href: '/about' },
+      { label: 'Business Solutions', href: '/business-solutions' },
       { label: 'Compare Speeds', href: '/mtn-vs-airtel-vs-zuku-uganda' },
       { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Terms of Use', href: '/terms' },
@@ -71,7 +72,7 @@ export default function Footer() {
         <div style={{ borderTop: '1px solid var(--border)', paddingTop: '2rem', paddingBottom: '2rem', marginTop: '2rem' }}>
           <h2 style={{ fontSize: '1rem', color: 'var(--t0)', marginBottom: '0.5rem', fontFamily: 'var(--font-head)' }}>About Zuku Fiber Uganda</h2>
           <p style={{ fontSize: '0.85rem', color: 'var(--t2)', lineHeight: '1.6' }}>
-            Zuku Fiber Uganda is a premier Internet Service Provider (ISP) and telecommunications company headquartered in Kampala, Uganda. Operating as a subsidiary of the Wananchi Group entity, Zuku Fiber is categorized within the telecommunications and broadband networking industry. Our core business operations involve deploying physical fiber-optic cables directly to residential and commercial premises (FTTH/FTTB) to deliver high-speed, unlimited broadband internet, comprehensive digital TV packages, and VoIP communication solutions. By competing with mobile network operators like MTN Uganda and Airtel Uganda, Zuku Fiber establishes a dedicated fixed-line infrastructure designed specifically for digital professionals, remote workers, and data-heavy households requiring symmetrical, zero-throttled bandwidth and robust 5ms latency configurations.
+            Zuku Fiber Uganda is a premier <strong>telecommunications company</strong> and <strong>internet service provider (ISP)</strong> headquartered in Kampala, Uganda. Operating as a subsidiary of the Wananchi Group, Zuku Fiber is categorised within the <strong>telecommunications and fiber optic broadband</strong> industry. Our core services include unlimited <strong>fiber optic broadband internet</strong> (25 Mbps–1.5 Gbps symmetrical), <strong>dedicated business internet</strong> for SMEs and enterprises, digital TV with 100+ channels, and VoIP telephony — all delivered via physical FTTH/FTTB infrastructure directly to residential and commercial premises across Kampala, Uganda.
           </p>
         </div>
 

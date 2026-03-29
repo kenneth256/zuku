@@ -2,7 +2,9 @@ import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: 'https://www.zukufiber.co.ug', lastModified: new Date('2026-03-22'), changeFrequency: 'monthly', priority: 1 },
+    { url: 'https://www.zukufiber.co.ug', lastModified: new Date('2026-03-30'), changeFrequency: 'monthly', priority: 1 },
+    { url: 'https://www.zukufiber.co.ug/about', lastModified: new Date('2026-03-30'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: 'https://www.zukufiber.co.ug/business-solutions', lastModified: new Date('2026-03-30'), changeFrequency: 'monthly', priority: 0.9 },
     { url: 'https://www.zukufiber.co.ug/best-internet-uganda', lastModified: new Date('2026-03-22'), changeFrequency: 'monthly', priority: 0.95 },
     { url: 'https://www.zukufiber.co.ug/mtn-vs-airtel-vs-zuku-uganda', lastModified: new Date('2026-03-22'), changeFrequency: 'monthly', priority: 0.9 },
     { url: 'https://www.zukufiber.co.ug/cheapest-internet-uganda', lastModified: new Date('2026-03-22'), changeFrequency: 'monthly', priority: 0.9 },
@@ -17,3 +19,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.zukufiber.co.ug/terms', lastModified: new Date('2026-03-26'), changeFrequency: 'yearly', priority: 0.3 },
   ]
 }
+

@@ -45,74 +45,118 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    'name': 'Zuku Fiber Uganda',
-    'url': 'https://www.zukufiber.co.ug',
-    'logo': 'https://www.zukufiber.co.ug/logo.png',
-    'description': 'Zuku Fiber Uganda offers the best unlimited home internet with zero data caps, symmetrical speeds, and 24/7 dedicated support.',
-    'contactPoint': {
-      '@type': 'ContactPoint',
-      'telephone': '+2560775260196',
-      'contactType': 'customer support',
-      'areaServed': 'UG',
-      'availableLanguage': 'English'
-    },
-    'sameAs': [
-      'https://facebook.com/ZukuOfficial',
-      'https://x.com/zuku_ug'
-    ]
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    'name': 'Zuku Fiber Uganda',
-    'url': 'https://www.zukufiber.co.ug',
-    'description': 'Zuku Fiber Uganda offers affordable, unlimited home internet with 24/7 support and guaranteed uptime.',
-    'potentialAction': {
-      '@type': 'SearchAction',
-      'target': 'https://www.zukufiber.co.ug/?s={search_term_string}',
-      'query-input': 'required name=search_term_string'
-    }
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    'name': 'Zuku Fiber Uganda',
-    'image': 'https://www.zukufiber.co.ug/og-image.png',
-    '@id': 'https://www.zukufiber.co.ug',
-    'url': 'https://www.zukufiber.co.ug',
-    'telephone': '+2560775260196',
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': 'Diamond Trust Bldg',
-      'addressLocality': 'Kampala',
-      'addressCountry': 'UG'
-    },
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 0.3136,
-      'longitude': 32.5811
-    },
-    'openingHours': 'Mo-Su 00:00-23:59',
-    'openingHoursSpecification': {
-      '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday'
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'TelecommunicationsCompany',
+      '@id': 'https://www.zukufiber.co.ug/#organization',
+      'name': 'Zuku Fiber Uganda',
+      'alternateName': 'Zuku Uganda',
+      'url': 'https://www.zukufiber.co.ug',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://www.zukufiber.co.ug/logo.png',
+        'width': 200,
+        'height': 60
+      },
+      'image': 'https://www.zukufiber.co.ug/og-image.png',
+      'description': 'Zuku Fiber Uganda is a premier telecommunications company and internet service provider, delivering reliable high-speed fiber optic broadband and television services to 50,000+ homes and businesses across Kampala, Uganda. A subsidiary of the Wananchi Group, founded in 2010.',
+      'foundingDate': '2010',
+      'numberOfEmployees': { '@type': 'QuantitativeValue', 'value': 200 },
+      'industry': 'Telecommunications',
+      'naics': '517311',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Diamond Trust Building, Kampala Road',
+        'addressLocality': 'Kampala',
+        'addressRegion': 'Central Uganda',
+        'postalCode': '7166',
+        'addressCountry': 'UG'
+      },
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': 0.3136,
+        'longitude': 32.5811
+      },
+      'contactPoint': [
+        {
+          '@type': 'ContactPoint',
+          'telephone': '+256775260196',
+          'contactType': 'customer support',
+          'areaServed': 'UG',
+          'availableLanguage': 'English',
+          'contactOption': 'TollFree'
+        },
+        {
+          '@type': 'ContactPoint',
+          'telephone': '+256747505741',
+          'contactType': 'sales',
+          'areaServed': 'UG',
+          'availableLanguage': 'English'
+        }
       ],
-      'opens': '00:00',
-      'closes': '23:59'
+      'areaServed': {
+        '@type': 'City',
+        'name': 'Kampala',
+        'sameAs': 'https://en.wikipedia.org/wiki/Kampala'
+      },
+      'sameAs': [
+        'https://facebook.com/ZukuOfficial',
+        'https://x.com/zuku_ug',
+        'https://instagram.com/zuku_ug',
+        'https://www.wananchi.com',
+        'https://en.wikipedia.org/wiki/Wananchi_Group'
+      ],
+      'parentOrganization': {
+        '@type': 'Organization',
+        'name': 'Wananchi Group',
+        'url': 'https://www.wananchi.com'
+      },
+      'hasOfferCatalog': {
+        '@type': 'OfferCatalog',
+        'name': 'Zuku Fiber Internet & TV Plans',
+        'itemListElement': [
+          {
+            '@type': 'Offer',
+            'name': 'Zuku Home 25 Mbps',
+            'description': 'Unlimited fiber internet at 25 Mbps symmetrical — starting from UGX 75,000/month with free installation and free router.',
+            'price': '75000',
+            'priceCurrency': 'UGX',
+            'eligibleRegion': { '@type': 'Place', 'name': 'Kampala, Uganda' }
+          },
+          {
+            '@type': 'Offer',
+            'name': 'Zuku Home 1.5 Gbps Max Speed',
+            'description': 'Symmetrical gigabit fiber internet for power users and businesses — no throttling, no data caps, 99.9% uptime SLA.',
+            'eligibleRegion': { '@type': 'Place', 'name': 'Kampala, Uganda' }
+          }
+        ]
+      },
+      'openingHoursSpecification': {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+        'opens': '00:00',
+        'closes': '23:59'
+      }
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.zukufiber.co.ug/#website',
+      'url': 'https://www.zukufiber.co.ug',
+      'name': 'Zuku Fiber Uganda — Best Unlimited Home Internet in Uganda',
+      'description': 'Zuku Fiber Uganda: Uganda\'s premier fiber-optic internet service provider. Unlimited broadband starting from UGX 75,000/month — free installation, free router, 24/7 local support in Kampala.',
+      'publisher': { '@id': 'https://www.zukufiber.co.ug/#organization' },
+      'inLanguage': 'en-UG'
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.zukufiber.co.ug' }
+      ]
     }
-  }
-];
+  ]
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

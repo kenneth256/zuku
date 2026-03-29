@@ -31,19 +31,28 @@ export function generateMetadata(): Metadata {
 export default function AboutPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "TelecommunicationsCompany",
+    "@id": "https://www.zukufiber.co.ug/#organization",
     "name": "Zuku Fiber Uganda",
     "alternateName": "Zuku Uganda",
-    "description": "Zuku Fiber Uganda is a premier Internet Service Provider (ISP) and telecommunications company headquartered in Kampala, Uganda. A subsidiary of the Wananchi Group, founded in 2010, Zuku Fiber deploys physical fiber-optic cables (FTTH/FTTB) to deliver unlimited broadband, digital TV, and VoIP solutions to 50,000+ households across Kampala.",
+    "description": "Zuku Fiber Uganda is a premier telecommunications company and internet service provider (ISP) headquartered in Kampala, Uganda. A subsidiary of the Wananchi Group, founded in 2010, Zuku Fiber deploys physical fiber-optic cables (FTTH/FTTB) to deliver unlimited fiber optic broadband, digital connectivity, digital TV, and VoIP solutions to 50,000+ households and businesses across Kampala, Uganda.",
     "url": "https://www.zukufiber.co.ug",
-    "logo": "https://www.zukufiber.co.ug/logo.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zukufiber.co.ug/logo.png",
+      "width": 200,
+      "height": 60
+    },
     "foundingDate": "2010",
     "numberOfEmployees": { "@type": "QuantitativeValue", "value": 200 },
+    "industry": "Telecommunications",
+    "naics": "517311",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Diamond Trust Building, Kampala Road",
       "addressLocality": "Kampala",
       "addressRegion": "Central Uganda",
+      "postalCode": "7166",
       "addressCountry": "UG"
     },
     "contactPoint": [
@@ -52,7 +61,8 @@ export default function AboutPage() {
         "telephone": "+256775260196",
         "contactType": "customer support",
         "areaServed": "UG",
-        "availableLanguage": "English"
+        "availableLanguage": "English",
+        "contactOption": "TollFree"
       },
       {
         "@type": "ContactPoint",
@@ -66,7 +76,9 @@ export default function AboutPage() {
       "https://facebook.com/ZukuOfficial",
       "https://x.com/zuku_ug",
       "https://instagram.com/zuku_ug",
-      "https://wa.me/256775260196"
+      "https://wa.me/256775260196",
+      "https://www.wananchi.com",
+      "https://en.wikipedia.org/wiki/Wananchi_Group"
     ],
     "parentOrganization": {
       "@type": "Organization",
@@ -140,8 +152,14 @@ export default function AboutPage() {
         <section id="about-definition" className="section" style={{ background: 'var(--bg-2)', padding: '4rem 0', borderBottom: '1px solid var(--border)' }}>
           <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '1.5rem', textAlign: 'center' }}>What is Zuku Fiber Uganda?</h2>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--t1)' }}>
-              <strong>Short Answer:</strong> Zuku Fiber Uganda is a fiber-optic Internet Service Provider (ISP) headquartered at Diamond Trust Building, Kampala Road, Kampala, Uganda. Established in 2010 as a subsidiary of the <strong>Wananchi Group</strong>, Zuku Fiber operates a dedicated physical fiber network (FTTH/FTTB) delivering symmetrical unlimited broadband, 100+ channel digital TV, and VoIP services to residential and commercial customers across Kampala. With a workforce of 200+ local engineers and support staff, the company serves over 50,000 active households and holds a verified 99.9% uptime SLA.
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--t1)', marginBottom: '1.5rem' }}>
+              <strong>Short Answer:</strong> Zuku Fiber Uganda is a <strong>telecommunications company</strong> and <strong>fiber-optic internet service provider (ISP)</strong> headquartered at Diamond Trust Building, Kampala Road, Kampala, Uganda. Established in 2010 as a subsidiary of the <strong>Wananchi Group</strong> — East Africa&apos;s leading integrated media and communications company — Zuku Fiber operates a dedicated physical <strong>fiber optic broadband</strong> network (FTTH/FTTB) delivering symmetrical unlimited broadband, 100+ channel digital TV, and VoIP services to residential and commercial customers across Kampala. With a workforce of 200+ local engineers and support staff, the company serves over 50,000 active households and holds a verified 99.9% uptime SLA.
+            </p>
+            <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--t1)', marginBottom: '1.5rem' }}>
+              <strong>About Zuku Fiber Uganda:</strong> Zuku Fiber Uganda stands as a leading <strong>telecommunications company</strong> dedicated to transforming <strong>digital connectivity</strong> across Uganda. As a premier <strong>internet service provider</strong>, we specialise in delivering cutting-edge <strong>fiber optic broadband</strong> and comprehensive television services, ensuring unparalleled speed, reliability, and entertainment for both residential and business customers. Our commitment is to empower communities and businesses with robust <strong>digital infrastructure</strong>, driving progress and innovation throughout the nation.
+            </p>
+            <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--t2)' }}>
+              Zuku Fiber Uganda&apos;s core industry is <strong>telecommunications</strong>. Our primary services include: unlimited fiber optic broadband internet (25 Mbps – 1.5 Gbps symmetrical), digital TV with 100+ channels, VoIP telephony, and dedicated business internet connectivity for SMEs and enterprises across Kampala, Uganda.
             </p>
           </div>
         </section>
