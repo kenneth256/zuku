@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
 
 export function generateMetadata(): Metadata {
   return {
@@ -115,49 +116,31 @@ export default function BestInternetUgandaPage() {
     <>
       <Navbar />
       <main style={{ background: 'var(--bg)' }}>
-        {/* 1. HERO SECTION */}
-        <section className="section" style={{ paddingTop: '8rem', paddingBottom: '5rem' }}>
-          <div className="container" style={{ textAlign: 'center' }}>
-            <div className="label label-green animate-up d1">
-              <span className="label-dot" />
-              🏆 Uganda&apos;s #1 Ranked Provider — 2026
-            </div>
-            <h1 className="section-title animate-up d2" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginTop: '2rem' }}>
-              The <span className="grad-g">Best Internet in Uganda</span> 2026 — Compared & Ranked
-            </h1>
-            <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Stop guessing and start surfing. We compared speed, reliability, and price across every ISP. Discover why Zuku Fiber is the best internet provider Uganda has for families and professionals.
-            </p>
-            <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="https://wa.me/2560775260196" className="btn btn-primary">Sign Up on WhatsApp</Link>
-              <Link href="/#plans" className="btn btn-ghost">View Fiber Plans</Link>
-            </div>
-            
-            <div className="animate-up d5" style={{ marginTop: '4rem', display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', color: 'var(--t2)', fontSize: '0.875rem' }}>
-              <span>⚡ Free Installation</span>
-              <span>·</span>
-              <span>📡 Free Wi-Fi Router</span>
-              <span>·</span>
-              <span>📺 100+ TV Channels</span>
-              <span>·</span>
-              <span>🔒 No Contracts</span>
-            </div>
-
-            <div className="animate-up d5" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', marginTop: '4rem' }}>
-              {[
-                { label: 'Uptime SLA', val: '99.9%', color: 'var(--t0)' },
-                { label: 'Max Speed', val: '200 Mbps', color: 'var(--blue)' },
-                { label: 'Low Latency', val: '5ms', color: 'var(--yellow)' },
-                { label: 'Data Limit', val: 'Unlimited', color: 'var(--green)' }
-              ].map((stat, i) => (
-                <div key={i} className="card" style={{ padding: '1.5rem', background: 'var(--bg-3)', border: '1px solid var(--border-2)' }}>
-                  <div style={{ fontSize: '0.7rem', color: 'var(--t2)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>{stat.label}</div>
-                  <div style={{ fontFamily: 'var(--font-head)', fontSize: '1.5rem', fontWeight: '700', color: stat.color }}>{stat.val}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <PageHero
+          badge={{ text: 'Uganda\'s #1 Ranked ISP — 2026', color: 'green' }}
+          breadcrumbs={[
+            { label: 'Home', href: '/' },
+            { label: 'Best Internet Uganda', href: '/best-internet-uganda' },
+          ]}
+          title={<>The <span className="grad-g">Best Internet in Uganda</span> 2026 — Compared & Ranked</>}
+          subtitle="Stop guessing and start surfing. We compared speed, reliability, and price across every ISP. Discover why Zuku Fiber is the best internet provider Uganda has for families and professionals."
+          ctas={[
+            { label: 'Sign Up on WhatsApp', href: 'https://wa.me/2560775260196', primary: true },
+            { label: 'View Fiber Plans', href: '/#plans' },
+          ]}
+          highlights={[
+            '⚡ Free Installation',
+            '· 📡 Free Wi-Fi Router',
+            '· 📺 100+ TV Channels',
+            '· 🔒 No Contracts',
+          ]}
+          stats={[
+            { val: '99.9%', label: 'Uptime SLA', color: 'var(--t0)' },
+            { val: '200 Mbps', label: 'Max Speed', color: 'var(--blue)' },
+            { val: '5ms', label: 'Low Latency', color: 'var(--yellow)' },
+            { val: 'Unlimited', label: 'Data Cap', color: 'var(--green)' },
+          ]}
+        />
 
         {/* TABLE OF CONTENTS */}
         <section className="section" style={{ padding: '2rem 0', background: 'var(--bg-3)', borderBottom: '1px solid var(--border)' }}>

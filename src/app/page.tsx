@@ -60,9 +60,26 @@ export default function Home() {
     },
     "speakable": {
       "@type": "SpeakableSpecification",
-      "cssSelector": ["#faq", "#hero .d1", "#hero .d2"]
+      "cssSelector": ["#faq", "#hero .d1", "#hero .d2", ".section-title"]
     },
     "url": "https://www.zukufiber.co.ug/"
+  };
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Best Unlimited Home Internet in Uganda — Zuku Fiber",
+    "description": "Zuku Fiber Uganda offers the best unlimited home fiber internet starting at UGX 75,000/month. Zero data caps, 99.9% uptime, and speeds up to 200 Mbps.",
+    "author": { "@type": "Organization", "name": "Zuku Fiber Uganda" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zuku Fiber Uganda",
+      "logo": { "@type": "ImageObject", "url": "https://www.zukufiber.co.ug/logo.png" }
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": "2026-03-29",
+    "mainEntityOfPage": "https://www.zukufiber.co.ug",
+    "image": "https://www.zukufiber.co.ug/og-image.png"
   };
 
   return (
@@ -74,6 +91,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <Navbar />
       <main>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
 
 export function generateMetadata(): Metadata {
   return {
@@ -114,49 +115,31 @@ export default function MtnAirtelZukuComparisonPage() {
     <>
       <Navbar />
       <main style={{ background: 'var(--bg)' }}>
-        {/* 1. HERO SECTION */}
-        <section className="section" style={{ paddingTop: '8rem', paddingBottom: '5rem' }}>
-          <div className="container" style={{ textAlign: 'center' }}>
-            <div className="label label-green animate-up d1">
-              <span className="label-dot" />
-              ⚔️ The Ultimate Uganda ISP Showdown
-            </div>
-            <h1 className="section-title animate-up d2" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginTop: '2rem' }}>
-              <span className="grad-g">MTN vs Airtel vs Zuku</span> Fiber Uganda 2026 — Which Is Best?
-            </h1>
-            <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              We compared Uganda&apos;s biggest internet providers. Discover how Airtel vs MTN vs Zuku Uganda stack up when it comes to true speed, data caps, and monthly costs.
-            </p>
-            <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="https://wa.me/2560775260196" className="btn btn-primary">Switch to Fiber now</Link>
-              <Link href="/#plans" className="btn btn-ghost">Compare Prices</Link>
-            </div>
-            
-            <div className="animate-up d5" style={{ marginTop: '4rem', display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', color: 'var(--t2)', fontSize: '0.875rem' }}>
-              <span>⚡ Free Installation</span>
-              <span>·</span>
-              <span>📡 Free Wi-Fi Router</span>
-              <span>·</span>
-              <span>📺 100+ TV Channels</span>
-              <span>·</span>
-              <span>🔒 No Contracts</span>
-            </div>
-
-            <div className="animate-up d5" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', marginTop: '4rem' }}>
-              {[
-                { label: 'Latency', val: '5ms (Fiber)', color: 'var(--blue)' },
-                { label: 'Data Limit', val: 'Strictly None', color: 'var(--green)' },
-                { label: 'Speed Cap', val: 'No Throttling', color: 'var(--t0)' },
-                { label: 'Support', val: '24/7 Local', color: 'var(--yellow)' }
-              ].map((stat, i) => (
-                <div key={i} className="card" style={{ padding: '1.5rem', background: 'var(--bg-3)', border: '1px solid var(--border-2)' }}>
-                  <div style={{ fontSize: '0.7rem', color: 'var(--t2)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>{stat.label}</div>
-                  <div style={{ fontFamily: 'var(--font-head)', fontSize: '1.5rem', fontWeight: '700', color: stat.color }}>{stat.val}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <PageHero
+          badge={{ text: '⚔️ The Ultimate Uganda ISP Showdown', color: 'green' }}
+          breadcrumbs={[
+            { label: 'Home', href: '/' },
+            { label: 'MTN vs Airtel vs Zuku', href: '/mtn-vs-airtel-vs-zuku-uganda' },
+          ]}
+          title={<><span className="grad-g">MTN vs Airtel vs Zuku</span> Fiber Uganda 2026 — Which Is Best?</>}
+          subtitle="We compared Uganda's biggest internet providers. Discover how Airtel vs MTN vs Zuku Uganda stack up when it comes to true speed, data caps, and monthly costs."
+          ctas={[
+            { label: 'Switch to Fiber Now', href: 'https://wa.me/2560775260196', primary: true },
+            { label: 'Compare Prices', href: '/#plans' },
+          ]}
+          highlights={[
+            '⚡ Free Installation',
+            '· 📡 Free Wi-Fi Router',
+            '· 📺 100+ TV Channels',
+            '· 🔒 No Contracts',
+          ]}
+          stats={[
+            { val: '5ms', label: 'Latency (Fiber)', color: 'var(--blue)' },
+            { val: 'None', label: 'Data Cap', color: 'var(--green)' },
+            { val: 'Zero', label: 'Throttling', color: 'var(--t0)' },
+            { val: '24/7', label: 'Local Support', color: 'var(--yellow)' },
+          ]}
+        />
 
         {/* TABLE OF CONTENTS */}
         <section className="section" style={{ padding: '2rem 0', background: 'var(--bg-3)', borderBottom: '1px solid var(--border)' }}>

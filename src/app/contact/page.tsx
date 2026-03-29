@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
 
 export function generateMetadata(): Metadata {
   return {
@@ -17,12 +18,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Contact Us | Zuku Fiber Uganda',
       description: 'Get in touch with Zuku Fiber Uganda for unlimited home fiber, business internet, and 24/7 technical support in Kampala.',
-      url: 'https://zukufiberuganda.vercel.app/contact',
+      url: 'https://www.zukufiber.co.ug/contact',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/contact',
+      canonical: 'https://www.zukufiber.co.ug/contact',
     },
   };
 }
@@ -67,21 +68,24 @@ export default function ContactPage() {
     <>
       <Navbar />
       <main style={{ background: 'var(--bg)' }}>
-        {/* HERO SECTION */}
-        <section className="section" style={{ paddingTop: '8rem', paddingBottom: '3rem' }}>
-          <div className="container" style={{ textAlign: 'center' }}>
-            <div className="label label-green animate-up d1">
-              <span className="label-dot" />
-              Here to Help
-            </div>
-            <h1 className="section-title animate-up d2" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginTop: '2rem' }}>
-              Get in <span className="grad-g">Touch</span> with Us
-            </h1>
-            <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Whether you need to schedule a free installation, upgrade your fiber plan, or get 24/7 technical support, our team in Kampala is ready.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          badge={{ text: 'Here to Help · 24/7 Support', color: 'green' }}
+          breadcrumbs={[
+            { label: 'Home', href: '/' },
+            { label: 'Contact', href: '/contact' },
+          ]}
+          title={<>Get in <span className="grad-g">Touch</span> with Us</>}
+          subtitle="Whether you need to schedule a free installation, upgrade your fiber plan, or get 24/7 technical support, our team in Kampala is ready."
+          ctas={[
+            { label: 'WhatsApp Us Now', href: 'https://wa.me/2560775260196', primary: true },
+            { label: 'Call 0775 260 196', href: 'tel:+2560775260196' },
+          ]}
+          highlights={[
+            '⚡ Average response: 2 minutes',
+            '· 📍 Diamond Trust Bldg, Kampala',
+            '· ✉️ support@zukufiber.co.ug',
+          ]}
+        />
 
         {/* CONTACT INFO GRID */}
         <section className="section" style={{ background: 'var(--bg-2)' }}>
