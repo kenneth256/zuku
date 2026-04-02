@@ -1,14 +1,14 @@
-import Navbar        from '@/components/Navbar';
-import HeroSection   from '@/components/HeroSection';
-import Features      from '@/components/Features';
-import Plans         from '@/components/Plans';
-import TVLineup      from '@/components/TVLineup';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import Features from '@/components/Features';
+import Plans from '@/components/Plans';
+import TVLineup from '@/components/TVLineup';
 import PaymentOptions from '@/components/PaymentOptions';
-import Testimonials  from '@/components/Testimonials';
-import CaseStudies   from '@/components/CaseStudies';
-import FAQ           from '@/components/FAQ';
-import CTA           from '@/components/CTA';
-import Footer        from '@/components/Footer';
+import Testimonials from '@/components/Testimonials';
+import CaseStudies from '@/components/CaseStudies';
+import FAQ from '@/components/FAQ';
+import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const jsonLd = {
@@ -17,7 +17,7 @@ export default function Home() {
     "name": "How to Get Zuku Unlimited Fiber Internet",
     "description": "Step-by-step guide on how to get connected to Zuku unlimited fiber internet.",
     "totalTime": "PT4H",
-    "image": "https://www.zukufiber.co.ug/og-image.png",
+    "image": "https://zukufiberuganda.vercel.app/og-image.png",
     "step": [
       {
         "@type": "HowToStep",
@@ -54,7 +54,7 @@ export default function Home() {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.zukufiber.co.ug"
+          "item": "https://zukufiberuganda.vercel.app"
         }
       ]
     },
@@ -62,7 +62,7 @@ export default function Home() {
       "@type": "SpeakableSpecification",
       "cssSelector": ["#faq", "#hero .d1", "#hero .d2", ".section-title"]
     },
-    "url": "https://www.zukufiber.co.ug/"
+    "url": "https://zukufiberuganda.vercel.app/"
   };
 
   const articleJsonLd = {
@@ -74,12 +74,12 @@ export default function Home() {
     "publisher": {
       "@type": "Organization",
       "name": "Zuku Fiber Uganda",
-      "logo": { "@type": "ImageObject", "url": "https://www.zukufiber.co.ug/logo.png" }
+      "logo": { "@type": "ImageObject", "url": "https://zukufiberuganda.vercel.app/logo.png" }
     },
     "datePublished": "2024-01-01",
     "dateModified": "2026-03-29",
-    "mainEntityOfPage": "https://www.zukufiber.co.ug",
-    "image": "https://www.zukufiber.co.ug/og-image.png"
+    "mainEntityOfPage": "https://zukufiberuganda.vercel.app",
+    "image": "https://zukufiberuganda.vercel.app/og-image.png"
   };
 
   return (
@@ -99,7 +99,7 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        
+
         {/* Definitional Content for AI Answer Engines */}
         <section className="section" style={{ background: 'var(--bg-2)', padding: '4rem 0', borderBottom: '1px solid var(--border)' }}>
           <div className="container" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
