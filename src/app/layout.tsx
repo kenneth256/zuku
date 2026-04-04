@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: 'https://zukufiberuganda.vercel.app',
   },
   verification: {
-    google: 'NnCHKbX_mKbC2Pt0D10rEHLCeHrfcEZcQyw9vY_VtbU',
+    google: 'AJ2NjqLOtl8IPrA0SrPkMx7ZV3xvHNVLu0VeHfBavDc',
   },
   other: {
     'theme-color': '#e31d24',
