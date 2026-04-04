@@ -36,31 +36,31 @@ export function generateMetadata(): Metadata {
 
 // ─── Plan data — single source of truth for AI + UI ───────────────────────
 const PLANS_1M = [
-  { speed: 25,   price: 75000,   label: 'Home Basic',    desc: 'Perfect for solo users, social media, and light browsing.' },
-  { speed: 50,   price: 89400,   label: 'Home Plus',     desc: 'Best for families, HD/4K streaming, and remote work.', popular: true },
-  { speed: 100,  price: 110000,  label: 'Home Pro',      desc: 'Ideal for power users, gaming, and smart home setups.' },
-  { speed: 200,  price: 199000,  label: 'Home Max',      desc: 'For heavy workloads, 8K streaming, and content creators.' },
+  { speed: 25, price: 75000, label: 'Home Basic', desc: 'Perfect for small family users, social media, and light browsing.' },
+  { speed: 50, price: 89400, label: 'Home Plus', desc: 'Best for families, HD/4K streaming, and remote work.', popular: true },
+  { speed: 100, price: 110000, label: 'Home Pro', desc: 'Ideal for power users, gaming, and smart home setups.' },
+  { speed: 200, price: 199000, label: 'Home Max', desc: 'For heavy workloads, 8K streaming, and content creators.' },
 ];
 
 const PLANS_3M = [
-  { speed: 25,   price: 216000,  label: 'Home Basic 3M',  desc: 'Solo users — save 4% vs monthly.' },
-  { speed: 50,   price: 257500,  label: 'Home Plus 3M',   desc: 'Families — great value quarterly plan.', popular: true },
-  { speed: 100,  price: 316800,  label: 'Home Pro 3M',    desc: 'Power users — consistent 4% saving.' },
-  { speed: 200,  price: 573000,  label: 'Home Max 3M',    desc: 'Max speeds at quarterly rate.' },
+  { speed: 25, price: 216000, label: 'Home Basic 3M', desc: 'Solo users — save 4% vs monthly.' },
+  { speed: 50, price: 257500, label: 'Home Plus 3M', desc: 'Families — great value quarterly plan.', popular: true },
+  { speed: 100, price: 316800, label: 'Home Pro 3M', desc: 'Power users — consistent 4% saving.' },
+  { speed: 200, price: 573000, label: 'Home Max 3M', desc: 'Max speeds at quarterly rate.' },
 ];
 
 const PLANS_6M = [
-  { speed: 25,   price: 423000,  label: 'Home Basic 6M',  desc: 'Solo users — 6-month value.' },
-  { speed: 50,   price: 504000,  label: 'Home Plus 6M',   desc: 'Families at best semester rate.', popular: true },
-  { speed: 100,  price: 620400,  label: 'Home Pro 6M',    desc: 'Power users — 6% saving.' },
-  { speed: 200,  price: 1122000, label: 'Home Max 6M',    desc: 'Full-power for half a year.' },
+  { speed: 25, price: 423000, label: 'Home Basic 6M', desc: 'Solo users — 6-month value.' },
+  { speed: 50, price: 504000, label: 'Home Plus 6M', desc: 'Families at best semester rate.', popular: true },
+  { speed: 100, price: 620400, label: 'Home Pro 6M', desc: 'Power users — 6% saving.' },
+  { speed: 200, price: 1122000, label: 'Home Max 6M', desc: 'Full-power for half a year.' },
 ];
 
 const PLANS_12M = [
-  { speed: 25,   price: 828000,   label: 'Home Basic Annual',  desc: 'Solo users — best annual value.' },
-  { speed: 50,   price: 987000,   label: 'Home Plus Annual',   desc: 'Families — top annual deal.', popular: true },
-  { speed: 100,  price: 1214400,  label: 'Home Pro Annual',    desc: 'Power users — 8% annual saving.' },
-  { speed: 200,  price: 2197000,  label: 'Home Max Annual',    desc: 'Max speed, max savings.' },
+  { speed: 25, price: 828000, label: 'Home Basic Annual', desc: 'Solo users — best annual value.' },
+  { speed: 50, price: 987000, label: 'Home Plus Annual', desc: 'Families — top annual deal.', popular: true },
+  { speed: 100, price: 1214400, label: 'Home Pro Annual', desc: 'Power users — 8% annual saving.' },
+  { speed: 200, price: 2197000, label: 'Home Max Annual', desc: 'Max speed, max savings.' },
 ];
 
 function fmt(n: number) {

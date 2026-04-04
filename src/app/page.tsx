@@ -145,8 +145,100 @@ export default function Home() {
         <Testimonials />
         <CaseStudies />
         <FAQ />
+
+        {/* ── Areas We Serve — local keyword density + internal link hub ── */}
+        <section className="section" style={{ background: 'var(--bg-2)', borderTop: '1px solid var(--border)' }}>
+          <div className="container" style={{ textAlign: 'center' }}>
+            <span className="label label-green" style={{ marginBottom: '1.5rem', display: 'inline-flex' }}>
+              <span className="label-dot" />
+              Coverage Map
+            </span>
+            <h2 className="section-title" style={{ marginTop: '1.25rem', marginBottom: '1rem' }}>
+              What Areas Do We Cover?
+            </h2>
+            <p className="section-sub" style={{ margin: '0 auto 3rem' }}>
+              Zuku Fiber has active fiber infrastructure across the following Kampala neighbourhoods.
+              Same-day and next-day installation available in most areas.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '1rem', maxWidth: '900px', margin: '0 auto 3rem' }}>
+              {([
+                { label: 'Kololo',    href: '/internet-in-kololo'   },
+                { label: 'Ntinda',    href: '/internet-in-ntinda'   },
+                { label: 'Naguru',    href: '/internet-in-naguru'   },
+                { label: 'Bugolobi', href: '/internet-in-bugolobi' },
+                { label: 'Muyenga',  href: '/internet-in-muyenga'  },
+                { label: 'Bukoto',   href: '/internet-in-bukoto'   },
+                { label: 'Kiwatule', href: '/internet-in-kiwatule' },
+                { label: 'Najjera',  href: '/internet-in-najjera'  },
+                { label: 'Kyambogo', href: '/internet-in-kyambogo' },
+                { label: 'Mbuya',    href: null },
+                { label: 'Mutungo',  href: null },
+                { label: 'Luzira',   href: null },
+                { label: 'Naalya',   href: null },
+                { label: 'Kisaasi',  href: null },
+                { label: 'Kyanja',   href: null },
+                { label: 'Munyonyo', href: null },
+              ] as { label: string; href: string | null }[]).map((area) => (
+                area.href ? (
+                  <a
+                    key={area.label}
+                    href={area.href}
+                    className="card"
+                    style={{ padding: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', color: 'var(--blue)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem', transition: 'background 0.2s, transform 0.2s' }}
+                  >
+                    <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>●</span>
+                    {area.label}
+                  </a>
+                ) : (
+                  <div
+                    key={area.label}
+                    className="card"
+                    style={{ padding: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', color: 'var(--t1)', fontSize: '0.95rem' }}
+                  >
+                    <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>●</span>
+                    {area.label}
+                  </div>
+                )
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Internal Link Hub — Compare, Pricing, Business, Local Areas ── */}
+        <section className="section" style={{ background: 'var(--bg-3)', borderTop: '1px solid var(--border)' }}>
+          <div className="container">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
+              <a href="/zuku-fiber-prices" className="card" style={{ padding: '2rem', textDecoration: 'none', display: 'block', transition: 'transform 0.2s' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>💰</div>
+                <h3 style={{ fontFamily: 'var(--font-head)', color: 'var(--t0)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Zuku Fiber Prices 2026</h3>
+                <p style={{ color: 'var(--t2)', fontSize: '0.875rem' }}>Full monthly, quarterly and annual plan pricing in UGX — from 75,000/mo.</p>
+                <span style={{ color: 'var(--blue)', fontSize: '0.85rem', fontWeight: '600', marginTop: '1rem', display: 'inline-block' }}>View pricing →</span>
+              </a>
+              <a href="/mtn-vs-airtel-vs-zuku-uganda" className="card" style={{ padding: '2rem', textDecoration: 'none', display: 'block', transition: 'transform 0.2s' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>⚔️</div>
+                <h3 style={{ fontFamily: 'var(--font-head)', color: 'var(--t0)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>MTN vs Airtel vs Zuku Uganda</h3>
+                <p style={{ color: 'var(--t2)', fontSize: '0.875rem' }}>Full 2026 comparison: fiber vs 5G, data caps, throttling, and true cost.</p>
+                <span style={{ color: 'var(--blue)', fontSize: '0.85rem', fontWeight: '600', marginTop: '1rem', display: 'inline-block' }}>Read comparison →</span>
+              </a>
+              <a href="/business-solutions" className="card" style={{ padding: '2rem', textDecoration: 'none', display: 'block', transition: 'transform 0.2s' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>🏢</div>
+                <h3 style={{ fontFamily: 'var(--font-head)', color: 'var(--t0)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Business Internet Uganda</h3>
+                <p style={{ color: 'var(--t2)', fontSize: '0.875rem' }}>Dedicated fiber for SMEs, enterprises, offices, and co-working spaces in Kampala.</p>
+                <span style={{ color: 'var(--blue)', fontSize: '0.85rem', fontWeight: '600', marginTop: '1rem', display: 'inline-block' }}>Learn more →</span>
+              </a>
+              <a href="/work-from-home-internet-uganda" className="card" style={{ padding: '2rem', textDecoration: 'none', display: 'block', transition: 'transform 0.2s' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>💻</div>
+                <h3 style={{ fontFamily: 'var(--font-head)', color: 'var(--t0)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Work from Home Internet</h3>
+                <p style={{ color: 'var(--t2)', fontSize: '0.875rem' }}>Best internet for remote workers and freelancers in Kampala — zero drops on Zoom.</p>
+                <span style={{ color: 'var(--blue)', fontSize: '0.85rem', fontWeight: '600', marginTop: '1rem', display: 'inline-block' }}>Learn more →</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <CTA />
       </main>
+
       <Footer />
     </>
   );

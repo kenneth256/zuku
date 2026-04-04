@@ -5,25 +5,29 @@ import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Business Internet Solutions — Dedicated SME & Enterprise Connectivity | Zuku Fiber Uganda',
-  description: 'Zuku Fiber Uganda delivers dedicated business internet, SME broadband, managed connectivity, and enterprise fiber solutions to businesses across Kampala. 99.9% uptime SLA, symmetrical speeds, 24/7 local support.',
+  title: 'Business Internet Uganda | Dedicated Fiber for Kampala Companies — Zuku Fiber',
+  description: 'Zuku Fiber Uganda delivers dedicated business internet, SME broadband, and enterprise fiber for Kampala companies. 99.9% uptime SLA, static IP, 24/7 local support.',
   keywords: [
     'business internet Uganda',
-    'dedicated business internet Kampala',
+    'dedicated internet Kampala',
+    'business broadband Uganda',
+    'office fiber internet Kampala',
+    'static IP Uganda ISP',
+    'enterprise internet Uganda',
     'SME broadband Uganda',
     'enterprise fiber internet Uganda',
     'managed connectivity Uganda',
     'Zuku Fiber business solutions',
   ],
   openGraph: {
-    title: 'Business Internet Solutions — Zuku Fiber Uganda',
+    title: 'Business Fiber Internet Uganda | Dedicated Broadband for Kampala Companies',
     description: 'Dedicated business internet, SME broadband, and enterprise connectivity solutions for Kampala businesses — guaranteed uptime, symmetrical speeds, 24/7 local support.',
-    url: 'https://www.zukufiber.co.ug/business-solutions',
+    url: 'https://zukufiberuganda.vercel.app/business-solutions',
     siteName: 'Zuku Fiber Uganda',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.zukufiber.co.ug/business-solutions',
+    canonical: 'https://zukufiberuganda.vercel.app/business-solutions',
   },
 };
 
@@ -107,12 +111,12 @@ export default function BusinessSolutionsPage() {
     '@type': 'WebPage',
     'name': 'Zuku Fiber Business Solutions — Enterprise & SME Internet in Uganda',
     'description': 'Zuku Fiber Uganda provides dedicated business internet, SME broadband, managed network services, VPN solutions, and cloud connectivity for businesses across Kampala, Uganda.',
-    'url': 'https://www.zukufiber.co.ug/business-solutions',
+    'url': 'https://zukufiberuganda.vercel.app/business-solutions',
     'breadcrumb': {
       '@type': 'BreadcrumbList',
       'itemListElement': [
-        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.zukufiber.co.ug' },
-        { '@type': 'ListItem', 'position': 2, 'name': 'Business Solutions', 'item': 'https://www.zukufiber.co.ug/business-solutions' },
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Business Solutions', 'item': 'https://zukufiberuganda.vercel.app/business-solutions' },
       ],
     },
     'mainEntity': {
@@ -122,9 +126,9 @@ export default function BusinessSolutionsPage() {
       'serviceType': 'Business Internet Service Provider',
       'provider': {
         '@type': 'TelecommunicationsCompany',
-        '@id': 'https://www.zukufiber.co.ug/#organization',
+        '@id': 'https://zukufiberuganda.vercel.app/#organization',
         'name': 'Zuku Fiber Uganda',
-        'url': 'https://www.zukufiber.co.ug',
+        'url': 'https://zukufiberuganda.vercel.app',
       },
       'areaServed': {
         '@type': 'AdministrativeArea',
@@ -249,6 +253,66 @@ export default function BusinessSolutionsPage() {
                   <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{f.icon}</div>
                   <h3 style={{ fontSize: '1rem', marginBottom: '0.75rem', fontFamily: 'var(--font-head)', color: 'var(--t0)' }}>{f.title}</h3>
                   <p style={{ color: 'var(--t2)', lineHeight: '1.65', fontSize: '0.9rem' }}>{f.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* BUSINESS TYPE SECTION */}
+        <section className="section" style={{ borderTop: '1px solid var(--border)' }}>
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+              <div className="label label-blue section-label">By Business Type</div>
+              <h2 className="section-title">Fiber Internet for Every Type of Kampala Business</h2>
+              <p className="section-sub" style={{ margin: '0 auto' }}>
+                Whether you run a boutique law firm or a 500-seat hotel, we have a plan built for your specific connectivity demands.
+              </p>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              {[
+                {
+                  icon: '⚖️',
+                  title: 'Fiber Internet for Law Firms in Kampala',
+                  desc: 'Secure, reliable broadband for legal research, client video calls, and document cloud uploads. Dedicated bandwidth ensures confidentiality-sensitive data moves fast without shared-network exposure.',
+                  kw: 'Static IP • Low latency • Managed firewall',
+                },
+                {
+                  icon: '💡',
+                  title: 'Fiber for Tech Startups in Uganda',
+                  desc: 'High-speed symmetrical fiber for dev teams, CI/CD pipelines, remote stand-ups, and SaaS products. Never miss a deployment because your upload speed bottlenecked.',
+                  kw: '200 Mbps symmetrical • No throttling • CIR',
+                },
+                {
+                  icon: '🛋️',
+                  title: 'Internet for Co-working Spaces in Kampala',
+                  desc: 'Multi-user, high-capacity fiber for co-working hubs. Serve 50+ simultaneous users without degradation. Includes managed Wi-Fi setup and optional VLAN isolation per desk zone.',
+                  kw: 'Multi-user capacity • Managed Wi-Fi • VLAN',
+                },
+                {
+                  icon: '🏫',
+                  title: 'School & University Internet Uganda',
+                  desc: 'Affordable fiber internet for schools, colleges, and universities in Kampala. Supports e-learning platforms, shared library access, and administrative networks.',
+                  kw: 'Affordable rates • High volume • Content filtering',
+                },
+                {
+                  icon: '🏨',
+                  title: 'Hotel & Hospitality Internet Kampala',
+                  desc: 'Fast, reliable guest Wi-Fi backed by a dedicated fiber line. No buffering complaints during peak check-in hours. Optional branded captive portal and floor-by-floor coverage planning.',
+                  kw: 'Guest Wi-Fi • Captive portal • Multi-floor',
+                },
+                {
+                  icon: '🏥',
+                  title: 'Healthcare & Clinic Broadband Uganda',
+                  desc: 'HIPAA-aware connectivity for clinics and hospitals. Dedicated lines for telemedicine, electronic health records, and medical imaging transfers — with 99.9% SLA uptime.',
+                  kw: '99.9% uptime SLA • Secure • Static IP',
+                },
+              ].map((bt, i) => (
+                <div key={i} className="card" style={{ padding: '2rem' }}>
+                  <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{bt.icon}</div>
+                  <h3 style={{ fontFamily: 'var(--font-head)', fontSize: '1rem', color: 'var(--t0)', marginBottom: '0.75rem' }}>{bt.title}</h3>
+                  <p style={{ color: 'var(--t1)', fontSize: '0.875rem', lineHeight: '1.7', marginBottom: '1rem' }}>{bt.desc}</p>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--blue)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{bt.kw}</div>
                 </div>
               ))}
             </div>

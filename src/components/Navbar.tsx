@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 
 const NAV_LINKS = [
-  { href: '#features',          label: 'Features'  },
-  { href: '#plans',             label: 'Plans'      },
-  { href: '/business-solutions',label: 'Business'   },
-  { href: '#tv',                label: 'TV'         },
-  { href: '#faq',               label: 'FAQ'        },
+  { href: '#features',                       label: 'Features' },
+  { href: '/zuku-fiber-prices',              label: 'Pricing'  },
+  { href: '/mtn-vs-airtel-vs-zuku-uganda',  label: 'Compare'  },
+  { href: '/business-solutions',             label: 'Business' },
+  { href: '#faq',                            label: 'FAQ'      },
 ];
 
 export default function Navbar() {

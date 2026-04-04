@@ -17,11 +17,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
-  description: 'Experience the best unlimited home internet in Uganda with Zuku Fiber. Ultra-fast speeds, 24/7 support, and 99.9% uptime starting from 75k.',
-  keywords: 'Zuku Fiber, Uganda internet, fiber internet Kampala, unlimited internet Uganda, unlimited internet Kampala, affordable internet Uganda, best internet Uganda',
+  title: 'Zuku Fiber Uganda | Unlimited Home Internet from UGX 75,000/mo',
+  description: 'Zuku Fiber delivers unlimited home internet in Kampala from UGX 75,000/month. Free installation, free router, 99.9% uptime. Get connected today.',
+  keywords: 'Zuku Fiber Uganda, fiber internet Uganda, unlimited internet Kampala, best internet Uganda, cheapest fiber internet Uganda, home internet Kampala, Zuku fiber plans Uganda',
   alternates: {
-    canonical: 'https://www.zukufiber.co.ug',
+    canonical: 'https://zukufiberuganda.vercel.app',
   },
   verification: {
     google: 'NnCHKbX_mKbC2Pt0D10rEHLCeHrfcEZcQyw9vY_VtbU',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     'format-detection': 'telephone=no',
   },
   openGraph: {
-    title: 'Best Unlimited Home Internet in Uganda — Zuku Fiber',
-    description: 'Experience the best unlimited home internet in Uganda with Zuku Fiber. Ultra-fast speeds, 24/7 support, and 99.9% uptime starting from 75k.',
-    url: 'https://www.zukufiber.co.ug',
+    title: 'Zuku Fiber Uganda | Unlimited Home Internet from UGX 75,000/mo',
+    description: 'Zuku Fiber delivers unlimited home internet in Kampala from UGX 75,000/month. Free installation, free router, 99.9% uptime. Get connected today.',
+    url: 'https://zukufiberuganda.vercel.app',
     siteName: 'Zuku Fiber Uganda',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Zuku Fiber Uganda - Best Unlimited Internet' }],
     locale: 'en_UG',
@@ -50,17 +50,17 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'TelecommunicationsCompany',
-      '@id': 'https://www.zukufiber.co.ug/#organization',
+      '@id': 'https://zukufiberuganda.vercel.app/#organization',
       'name': 'Zuku Fiber Uganda',
       'alternateName': 'Zuku Uganda',
-      'url': 'https://www.zukufiber.co.ug',
+      'url': 'https://zukufiberuganda.vercel.app',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://www.zukufiber.co.ug/logo.png',
+        'url': 'https://zukufiberuganda.vercel.app/logo.png',
         'width': 200,
         'height': 60
       },
-      'image': 'https://www.zukufiber.co.ug/og-image.png',
+      'image': 'https://zukufiberuganda.vercel.app/og-image.png',
       'description': 'Zuku Fiber Uganda is a premier telecommunications company and internet service provider, delivering reliable high-speed fiber optic broadband and television services to 50,000+ homes and businesses across Kampala, Uganda. A subsidiary of the Wananchi Group, founded in 2010.',
       'foundingDate': '2010',
       'numberOfEmployees': { '@type': 'QuantitativeValue', 'value': 200 },
@@ -96,6 +96,7 @@ const jsonLd = {
           'availableLanguage': 'English'
         }
       ],
+      'priceRange': 'UGX 75,000 – UGX 199,000',
       'areaServed': {
         '@type': 'City',
         'name': 'Kampala',
@@ -129,6 +130,8 @@ const jsonLd = {
             '@type': 'Offer',
             'name': 'Zuku Home 1.5 Gbps Max Speed',
             'description': 'Symmetrical gigabit fiber internet for power users and businesses — no throttling, no data caps, 99.9% uptime SLA.',
+            'price': '199000',
+            'priceCurrency': 'UGX',
             'eligibleRegion': { '@type': 'Place', 'name': 'Kampala, Uganda' }
           }
         ]
@@ -142,17 +145,17 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://www.zukufiber.co.ug/#website',
-      'url': 'https://www.zukufiber.co.ug',
+      '@id': 'https://zukufiberuganda.vercel.app/#website',
+      'url': 'https://zukufiberuganda.vercel.app',
       'name': 'Zuku Fiber Uganda — Best Unlimited Home Internet in Uganda',
       'description': 'Zuku Fiber Uganda: Uganda\'s premier fiber-optic internet service provider. Unlimited broadband starting from UGX 75,000/month — free installation, free router, 24/7 local support in Kampala.',
-      'publisher': { '@id': 'https://www.zukufiber.co.ug/#organization' },
+      'publisher': { '@id': 'https://zukufiberuganda.vercel.app/#organization' },
       'inLanguage': 'en-UG'
     },
     {
       '@type': 'BreadcrumbList',
       'itemListElement': [
-        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.zukufiber.co.ug' }
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app' }
       ]
     }
   ]

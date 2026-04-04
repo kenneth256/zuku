@@ -207,10 +207,11 @@ export default function MtnAirtelZukuComparisonPage() {
                       <td style={{ padding: '1rem 1.25rem' }}>Yes ✅</td>
                     </tr>
                     {[
-                      { p: 'MTN WakaNet', t: '5G/Fiber', price: 'UGX 130,000/mo', s: 'Varies', cap: 'Fair Usage ⚠️', th: 'Yes ❌', inst: 'No ❌' },
-                      { p: 'Airtel Uganda', t: '5G/4G', price: 'UGX 150,000/mo', s: 'Varies', cap: 'Volume Caps ❌', th: 'Yes ❌', inst: 'No ❌' },
-                      { p: 'Roke Telkom', t: 'Wireless', price: 'UGX 112,000/mo', s: '100 Mbps', cap: 'Time-based ⚠️', th: 'Yes ❌', inst: 'Usually No ❌' },
-                      { p: 'Faibanet', t: 'Fiber', price: 'UGX 100,000/mo', s: '50 Mbps', cap: 'Limited ⚠️', th: 'Unclear', inst: 'Often No ❌' }
+                       { p: 'MTN WakaNet', t: '5G/Fiber', price: 'UGX 130,000/mo', s: 'Varies', cap: 'Fair Usage ⚠️', th: 'Yes ❌', inst: 'No ❌' },
+                       { p: 'Airtel Uganda', t: '5G/4G', price: 'UGX 150,000/mo', s: 'Varies', cap: 'Volume Caps ❌', th: 'Yes ❌', inst: 'No ❌' },
+                       { p: 'Simba Fiber', t: 'Fiber/LTE', price: 'UGX 115,000/mo', s: '50 Mbps', cap: 'Volume Caps ❌', th: 'Yes ❌', inst: 'Varies ⚠️' },
+                       { p: 'Roke Telkom', t: 'Wireless', price: 'UGX 112,000/mo', s: '100 Mbps', cap: 'Time-based ⚠️', th: 'Yes ❌', inst: 'Paid ❌' },
+                       { p: 'Faibanet', t: 'Fiber', price: 'UGX 100,000/mo', s: '50 Mbps', cap: 'Limited ⚠️', th: 'Unclear', inst: 'Often No ❌' }
                     ].map((row, i) => (
                       <tr key={i} className="row-hover" style={{ borderBottom: '1px solid var(--border)', transition: 'background 0.2s' }}>
                         <td style={{ padding: '1rem 1.25rem' }}>{row.p}</td>
@@ -263,6 +264,74 @@ export default function MtnAirtelZukuComparisonPage() {
                     ))}
                   </ul>
                   <Link href="https://wa.me/2560775260196" className={`btn ${plan.popular ? 'btn-primary' : 'btn-ghost'}`} style={{ width: '100%' }}>Order Now</Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* LAST UPDATED BADGE */}
+        <section className="section" style={{ padding: '1.5rem 0', background: 'var(--bg-3)', borderTop: '1px solid var(--border)' }}>
+          <div className="container" style={{ textAlign: 'center' }}>
+            <span style={{ fontSize: '0.8rem', color: 'var(--t2)', fontStyle: 'italic' }}>
+              📅 Last updated: April 2026 — prices verified against current ISP tariff sheets
+            </span>
+          </div>
+        </section>
+
+        {/* WHY CHOOSE ZUKU OVER COMPETITORS — individual sections */}
+        <section className="section" style={{ background: 'var(--bg-2)' }}>
+          <div className="container">
+            <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '4rem' }}>Why Choose Zuku Over Each Provider?</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+              {[
+                {
+                  title: 'Why Choose Zuku Over MTN WakaNet?',
+                  points: [
+                    'MTN WakaNet runs on shared 5G towers — Zuku uses a dedicated fiber line direct to your home.',
+                    'MTN applies Fair Usage Policies that slow your connection after heavy use. Zuku never throttles.',
+                    'Zuku starts at UGX 75,000/mo vs MTN WakaNet from UGX 130,000/mo for comparable speeds.',
+                    'Zuku provides symmetrical upload = download. MTN is heavily asymmetric.',
+                  ],
+                },
+                {
+                  title: 'Why Choose Zuku Over Airtel Uganda?',
+                  points: [
+                    'Airtel 5G relies on mobile towers that suffer congestion during peak hours (7pm–10pm).',
+                    'Airtel volume caps will cut your speed or charge extra. Zuku has zero data caps.',
+                    'Zuku fiber latency averages 5ms vs 30ms+ on Airtel 5G — critical for gaming and video calls.',
+                    'Airtel charges for installation. Every Zuku plan includes free installation and a free router.',
+                  ],
+                },
+                {
+                  title: 'Why Choose Zuku Over Simba Fiber?',
+                  points: [
+                    'Simba plans carry volume caps that throttle heavy users. All Zuku plans are truly unlimited.',
+                    'Zuku offers symmetrical speeds up to 200 Mbps. Simba tops out at 50 Mbps on most residential plans.',
+                    'Zuku includes 100+ digital TV channels at no extra cost. Simba does not.',
+                    'Zuku\'s 200+ Kampala-based engineers mean faster response and local support.',
+                  ],
+                },
+                {
+                  title: 'Why Choose Zuku Over Savanna Fibre?',
+                  points: [
+                    'Savanna Fibre has limited residential coverage. Zuku serves 14+ Kampala neighbourhoods.',
+                    'Zuku\'s plans start from UGX 75,000/mo — more affordable for home users.',
+                    'Zuku includes a free Wi-Fi router on every plan. Savanna often charges for equipment.',
+                    'Zuku is backed by Wananchi Group — East Africa\'s largest private fiber operator.',
+                  ],
+                },
+              ].map((section, i) => (
+                <div key={i} className="card" style={{ padding: '2.5rem' }}>
+                  <h3 style={{ fontFamily: 'var(--font-head)', marginBottom: '1.5rem', color: 'var(--t0)', fontSize: '1.1rem' }}>{section.title}</h3>
+                  <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                    {section.points.map((point, j) => (
+                      <li key={j} style={{ display: 'flex', gap: '0.75rem', color: 'var(--t1)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                        <span style={{ color: 'var(--green)', fontWeight: '700', flexShrink: 0, marginTop: '2px' }}>✓</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>

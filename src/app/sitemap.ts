@@ -83,6 +83,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.82,
     },
+    {
+      url: `${BASE}/internet-in-muyenga`,
+      lastModified: new Date('2026-04-04'),
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
+    {
+      url: `${BASE}/internet-in-bukoto`,
+      lastModified: new Date('2026-04-04'),
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
+    {
+      url: `${BASE}/internet-in-kiwatule`,
+      lastModified: new Date('2026-04-04'),
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
+    {
+      url: `${BASE}/internet-in-najjera`,
+      lastModified: new Date('2026-04-04'),
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
+    {
+      url: `${BASE}/internet-in-kyambogo`,
+      lastModified: new Date('2026-04-04'),
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
 
     // ── Company Pages ─────────────────────────────────────────────────────
     {
