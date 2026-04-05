@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: '/robots.txt',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain' },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
