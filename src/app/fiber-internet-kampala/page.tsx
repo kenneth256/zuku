@@ -27,12 +27,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Fiber Internet in Kampala 2026 | Fast & Unlimited',
       description: 'The most reliable fiber internet Kampala residents can get. Truly unlimited, 24/7 support, and free installation.',
-      url: 'https://zukufiberuganda.vercel.app/fiber-internet-kampala',
+      url: 'https://zuku-seven.vercel.app/fiber-internet-kampala',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/fiber-internet-kampala',
+      canonical: 'https://zuku-seven.vercel.app/fiber-internet-kampala',
     },
   };
 }
@@ -73,7 +73,7 @@ export default function FiberInternetKampalaPage() {
           "latitude": 0.3476,
           "longitude": 32.5825
         },
-        "url": "https://zukufiberuganda.vercel.app/"
+        "url": "https://zuku-seven.vercel.app/"
       },
       {
         "@type": "BreadcrumbList",
@@ -82,13 +82,13 @@ export default function FiberInternetKampalaPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Fiber Internet Kampala",
-            "item": "https://zukufiberuganda.vercel.app/fiber-internet-kampala"
+            "item": "https://zuku-seven.vercel.app/fiber-internet-kampala"
           }
         ]
       },

@@ -27,12 +27,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Cheapest Internet in Uganda 2026 | Unlimited Fiber',
       description: 'Unlimited high-speed internet from just UGX 75,000/month. Escape the high cost of mobile data bundles.',
-      url: 'https://zukufiberuganda.vercel.app/cheapest-internet-uganda',
+      url: 'https://zuku-seven.vercel.app/cheapest-internet-uganda',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/cheapest-internet-uganda',
+      canonical: 'https://zuku-seven.vercel.app/cheapest-internet-uganda',
     },
   };
 }
@@ -68,7 +68,7 @@ export default function CheapestInternetUgandaPage() {
           "latitude": 0.3476,
           "longitude": 32.5825
         },
-        "url": "https://zukufiberuganda.vercel.app/"
+        "url": "https://zuku-seven.vercel.app/"
       },
       {
         "@type": "BreadcrumbList",
@@ -77,13 +77,13 @@ export default function CheapestInternetUgandaPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Cheapest Internet Uganda",
-            "item": "https://zukufiberuganda.vercel.app/cheapest-internet-uganda"
+            "item": "https://zuku-seven.vercel.app/cheapest-internet-uganda"
           }
         ]
       },

@@ -8,7 +8,7 @@
           "value": "zukufiber.co.ug"
         }
       ],
-      "destination": "https://zukufiberuganda.vercel.app/$1",
+      "destination": "https://zuku-seven.vercel.app/$1",
       "permanent": true
     }
   ]

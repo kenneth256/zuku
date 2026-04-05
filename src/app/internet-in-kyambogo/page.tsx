@@ -11,11 +11,11 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet in Kyambogo Kampala 2026 | Zuku Fiber',
       description: 'Unlimited fiber internet in Kyambogo for students, families, and professionals. Free installation, no data caps.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-kyambogo',
+      url: 'https://zuku-seven.vercel.app/internet-in-kyambogo',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
-    alternates: { canonical: 'https://zukufiberuganda.vercel.app/internet-in-kyambogo' },
+    alternates: { canonical: 'https://zuku-seven.vercel.app/internet-in-kyambogo' },
   };
 }
 
@@ -40,13 +40,13 @@ export default function InternetInKyambogoPage() {
         'address': { '@type': 'PostalAddress', 'streetAddress': 'Kyambogo Road', 'addressLocality': 'Kyambogo, Kampala', 'addressCountry': 'Uganda' },
         'telephone': '+256775260196',
         'geo': { '@type': 'GeoCoordinates', 'latitude': 0.3394, 'longitude': 32.6267 },
-        'url': 'https://zukufiberuganda.vercel.app/internet-in-kyambogo',
+        'url': 'https://zuku-seven.vercel.app/internet-in-kyambogo',
       },
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Kyambogo', 'item': 'https://zukufiberuganda.vercel.app/internet-in-kyambogo' },
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Kyambogo', 'item': 'https://zuku-seven.vercel.app/internet-in-kyambogo' },
         ],
       },
       {

@@ -18,12 +18,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'About Us | Zuku Fiber Uganda',
       description: 'Zuku Fiber Uganda — a Wananchi Group company founded in 2010 — delivers unlimited fiber-optic internet to 50,000+ Kampala homes.',
-      url: 'https://zukufiberuganda.vercel.app/about',
+      url: 'https://zuku-seven.vercel.app/about',
       siteName: 'Zuku Fiber Uganda',
       type: 'profile',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/about',
+      canonical: 'https://zuku-seven.vercel.app/about',
     },
   };
 }
@@ -32,14 +32,14 @@ export default function AboutPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "TelecommunicationsCompany",
-    "@id": "https://zukufiberuganda.vercel.app/#organization",
+    "@id": "https://zuku-seven.vercel.app/#organization",
     "name": "Zuku Fiber Uganda",
     "alternateName": "Zuku Uganda",
     "description": "Zuku Fiber Uganda is a premier telecommunications company and internet service provider (ISP) headquartered in Kampala, Uganda. A subsidiary of the Wananchi Group, founded in 2010, Zuku Fiber deploys physical fiber-optic cables (FTTH/FTTB) to deliver unlimited fiber optic broadband, digital connectivity, digital TV, and VoIP solutions to 50,000+ households and businesses across Kampala, Uganda.",
-    "url": "https://zukufiberuganda.vercel.app",
+    "url": "https://zuku-seven.vercel.app",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://zukufiberuganda.vercel.app/logo.png",
+      "url": "https://zuku-seven.vercel.app/logo.png",
       "width": 200,
       "height": 60
     },
@@ -101,11 +101,11 @@ export default function AboutPage() {
     "publisher": {
       "@type": "Organization",
       "name": "Zuku Fiber Uganda",
-      "logo": { "@type": "ImageObject", "url": "https://zukufiberuganda.vercel.app/logo.png" }
+      "logo": { "@type": "ImageObject", "url": "https://zuku-seven.vercel.app/logo.png" }
     },
     "datePublished": "2010-01-01",
     "dateModified": "2026-03-01",
-    "mainEntityOfPage": "https://zukufiberuganda.vercel.app/about"
+    "mainEntityOfPage": "https://zuku-seven.vercel.app/about"
   };
 
   const speakableSchema = {
@@ -116,7 +116,7 @@ export default function AboutPage() {
       "@type": "SpeakableSpecification",
       "cssSelector": ["#about-definition", "#about-stats", "#about-mission"]
     },
-    "url": "https://zukufiberuganda.vercel.app/about"
+    "url": "https://zuku-seven.vercel.app/about"
   };
 
   return (

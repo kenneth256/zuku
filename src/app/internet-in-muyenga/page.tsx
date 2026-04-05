@@ -22,12 +22,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet in Muyenga Kampala 2026 | Zuku Fiber',
       description: 'Unlimited fiber internet in Muyenga for streaming, gaming, and remote work. Free installation, no data caps.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-muyenga',
+      url: 'https://zuku-seven.vercel.app/internet-in-muyenga',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/internet-in-muyenga',
+      canonical: 'https://zuku-seven.vercel.app/internet-in-muyenga',
     },
   };
 }
@@ -62,13 +62,13 @@ export default function InternetInMuyengaPage() {
           'latitude': 0.2964,
           'longitude': 32.5973,
         },
-        'url': 'https://zukufiberuganda.vercel.app/internet-in-muyenga',
+        'url': 'https://zuku-seven.vercel.app/internet-in-muyenga',
       },
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Muyenga', 'item': 'https://zukufiberuganda.vercel.app/internet-in-muyenga' },
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Muyenga', 'item': 'https://zuku-seven.vercel.app/internet-in-muyenga' },
         ],
       },
       {

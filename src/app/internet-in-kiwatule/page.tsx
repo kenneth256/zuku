@@ -11,11 +11,11 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet in Kiwatule Kampala 2026 | Zuku Fiber',
       description: 'Unlimited fiber internet in Kiwatule. Free installation, no data caps, 99.9% uptime.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-kiwatule',
+      url: 'https://zuku-seven.vercel.app/internet-in-kiwatule',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
-    alternates: { canonical: 'https://zukufiberuganda.vercel.app/internet-in-kiwatule' },
+    alternates: { canonical: 'https://zuku-seven.vercel.app/internet-in-kiwatule' },
   };
 }
 
@@ -40,13 +40,13 @@ export default function InternetInKiwatulePage() {
         'address': { '@type': 'PostalAddress', 'streetAddress': 'Kiwatule Road', 'addressLocality': 'Kiwatule, Kampala', 'addressCountry': 'Uganda' },
         'telephone': '+256775260196',
         'geo': { '@type': 'GeoCoordinates', 'latitude': 0.3601, 'longitude': 32.6351 },
-        'url': 'https://zukufiberuganda.vercel.app/internet-in-kiwatule',
+        'url': 'https://zuku-seven.vercel.app/internet-in-kiwatule',
       },
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Kiwatule', 'item': 'https://zukufiberuganda.vercel.app/internet-in-kiwatule' },
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Kiwatule', 'item': 'https://zuku-seven.vercel.app/internet-in-kiwatule' },
         ],
       },
       {

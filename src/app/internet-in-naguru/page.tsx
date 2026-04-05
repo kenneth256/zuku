@@ -26,12 +26,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Fast Fiber Internet in Naguru Kampala 2026 | Zuku Fiber',
       description: 'The preferred choice for Naguru residents. High-speed, low-latency, and strictly unlimited fiber internet.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-naguru',
+      url: 'https://zuku-seven.vercel.app/internet-in-naguru',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/internet-in-naguru',
+      canonical: 'https://zuku-seven.vercel.app/internet-in-naguru',
     },
   };
 }
@@ -67,7 +67,7 @@ export default function InternetInNaguruPage() {
           "latitude": 0.3421,
           "longitude": 32.6105
         },
-        "url": "https://zukufiberuganda.vercel.app/internet-in-naguru"
+        "url": "https://zuku-seven.vercel.app/internet-in-naguru"
       },
       {
         "@type": "BreadcrumbList",
@@ -76,13 +76,13 @@ export default function InternetInNaguruPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Internet in Naguru",
-            "item": "https://zukufiberuganda.vercel.app/internet-in-naguru"
+            "item": "https://zuku-seven.vercel.app/internet-in-naguru"
           }
         ]
       },

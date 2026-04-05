@@ -27,12 +27,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet in Ntinda Kampala 2026 | Zuku Fiber',
       description: 'Localized high-speed fiber for Ntinda residents. Enjoy unlimited data for streaming, gaming, and remote work.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-ntinda',
+      url: 'https://zuku-seven.vercel.app/internet-in-ntinda',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/internet-in-ntinda',
+      canonical: 'https://zuku-seven.vercel.app/internet-in-ntinda',
     },
   };
 }
@@ -68,7 +68,7 @@ export default function InternetInNtindaPage() {
           "latitude": 0.3533,
           "longitude": 32.6100
         },
-        "url": "https://zukufiberuganda.vercel.app/internet-in-ntinda"
+        "url": "https://zuku-seven.vercel.app/internet-in-ntinda"
       },
       {
         "@type": "BreadcrumbList",
@@ -77,13 +77,13 @@ export default function InternetInNtindaPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Internet in Ntinda",
-            "item": "https://zukufiberuganda.vercel.app/internet-in-ntinda"
+            "item": "https://zuku-seven.vercel.app/internet-in-ntinda"
           }
         ]
       },

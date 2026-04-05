@@ -11,11 +11,11 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet in Bukoto Kampala 2026 | Zuku Fiber',
       description: 'Unlimited fiber internet in Bukoto. Free installation, no data caps.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-bukoto',
+      url: 'https://zuku-seven.vercel.app/internet-in-bukoto',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
-    alternates: { canonical: 'https://zukufiberuganda.vercel.app/internet-in-bukoto' },
+    alternates: { canonical: 'https://zuku-seven.vercel.app/internet-in-bukoto' },
   };
 }
 
@@ -40,13 +40,13 @@ export default function InternetInBukotoPage() {
         'address': { '@type': 'PostalAddress', 'streetAddress': 'Kira Road, Bukoto', 'addressLocality': 'Bukoto, Kampala', 'addressCountry': 'Uganda' },
         'telephone': '+256775260196',
         'geo': { '@type': 'GeoCoordinates', 'latitude': 0.3453, 'longitude': 32.5933 },
-        'url': 'https://zukufiberuganda.vercel.app/internet-in-bukoto',
+        'url': 'https://zuku-seven.vercel.app/internet-in-bukoto',
       },
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Bukoto', 'item': 'https://zukufiberuganda.vercel.app/internet-in-bukoto' },
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Bukoto', 'item': 'https://zuku-seven.vercel.app/internet-in-bukoto' },
         ],
       },
       {

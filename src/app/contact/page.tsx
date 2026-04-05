@@ -18,12 +18,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Contact Us | Zuku Fiber Uganda',
       description: 'Get in touch with Zuku Fiber Uganda for unlimited home fiber, business internet, and 24/7 technical support in Kampala.',
-      url: 'https://zukufiberuganda.vercel.app/contact',
+      url: 'https://zuku-seven.vercel.app/contact',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/contact',
+      canonical: 'https://zuku-seven.vercel.app/contact',
     },
   };
 }
@@ -36,8 +36,8 @@ export default function ContactPage() {
     "mainEntity": {
       "@type": "Organization",
       "name": "Zuku Fiber Uganda",
-      "url": "https://zukufiberuganda.vercel.app",
-      "logo": "https://zukufiberuganda.vercel.app/logo.png",
+      "url": "https://zuku-seven.vercel.app",
+      "logo": "https://zuku-seven.vercel.app/logo.png",
       "contactPoint": [
         {
           "@type": "ContactPoint",

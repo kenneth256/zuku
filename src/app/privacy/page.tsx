@@ -7,7 +7,7 @@ export function generateMetadata(): Metadata {
     title: 'Privacy Policy | Zuku Fiber Uganda',
     description: 'Privacy Policy for Zuku Fiber Uganda outlining how we collect, use, and protect your personal data and network information.',
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/privacy',
+      canonical: 'https://zuku-seven.vercel.app/privacy',
     },
   };
 }

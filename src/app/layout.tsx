@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: 'Zuku Fiber delivers unlimited home internet in Kampala from UGX 75,000/month. Free installation, free router, 99.9% uptime. Get connected today.',
   keywords: 'Zuku Fiber Uganda, fiber internet Uganda, unlimited internet Kampala, best internet Uganda, cheapest fiber internet Uganda, home internet Kampala, Zuku fiber plans Uganda',
   alternates: {
-    canonical: 'https://zukufiberuganda.vercel.app',
+    canonical: 'https://zuku-seven.vercel.app',
   },
   verification: {
     google: 'AJ2NjqLOtl8IPrA0SrPkMx7ZV3xvHNVLu0VeHfBavDc',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Zuku Fiber Uganda | Unlimited Home Internet from UGX 75,000/mo',
     description: 'Zuku Fiber delivers unlimited home internet in Kampala from UGX 75,000/month. Free installation, free router, 99.9% uptime. Get connected today.',
-    url: 'https://zukufiberuganda.vercel.app',
+    url: 'https://zuku-seven.vercel.app',
     siteName: 'Zuku Fiber Uganda',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Zuku Fiber Uganda - Best Unlimited Internet' }],
     locale: 'en_UG',
@@ -50,17 +50,17 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'TelecommunicationsCompany',
-      '@id': 'https://zukufiberuganda.vercel.app/#organization',
+      '@id': 'https://zuku-seven.vercel.app/#organization',
       'name': 'Zuku Fiber Uganda',
       'alternateName': 'Zuku Uganda',
-      'url': 'https://zukufiberuganda.vercel.app',
+      'url': 'https://zuku-seven.vercel.app',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://zukufiberuganda.vercel.app/logo.png',
+        'url': 'https://zuku-seven.vercel.app/logo.png',
         'width': 200,
         'height': 60
       },
-      'image': 'https://zukufiberuganda.vercel.app/og-image.png',
+      'image': 'https://zuku-seven.vercel.app/og-image.png',
       'description': 'Zuku Fiber Uganda is a premier telecommunications company and internet service provider, delivering reliable high-speed fiber optic broadband and television services to 50,000+ homes and businesses across Kampala, Uganda. A subsidiary of the Wananchi Group, founded in 2010.',
       'foundingDate': '2010',
       'numberOfEmployees': { '@type': 'QuantitativeValue', 'value': 200 },
@@ -145,17 +145,17 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://zukufiberuganda.vercel.app/#website',
-      'url': 'https://zukufiberuganda.vercel.app',
+      '@id': 'https://zuku-seven.vercel.app/#website',
+      'url': 'https://zuku-seven.vercel.app',
       'name': 'Zuku Fiber Uganda — Best Unlimited Home Internet in Uganda',
       'description': 'Zuku Fiber Uganda: Uganda\'s premier fiber-optic internet service provider. Unlimited broadband starting from UGX 75,000/month — free installation, free router, 24/7 local support in Kampala.',
-      'publisher': { '@id': 'https://zukufiberuganda.vercel.app/#organization' },
+      'publisher': { '@id': 'https://zuku-seven.vercel.app/#organization' },
       'inLanguage': 'en-UG'
     },
     {
       '@type': 'BreadcrumbList',
       'itemListElement': [
-        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app' }
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app' }
       ]
     }
   ]

@@ -17,7 +17,7 @@ export default function Home() {
     "name": "How to Get Zuku Unlimited Fiber Internet",
     "description": "Step-by-step guide on how to get connected to Zuku unlimited fiber internet.",
     "totalTime": "PT4H",
-    "image": "https://zukufiberuganda.vercel.app/og-image.png",
+    "image": "https://zuku-seven.vercel.app/og-image.png",
     "step": [
       {
         "@type": "HowToStep",
@@ -54,7 +54,7 @@ export default function Home() {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://zukufiberuganda.vercel.app"
+          "item": "https://zuku-seven.vercel.app"
         }
       ]
     },
@@ -62,7 +62,7 @@ export default function Home() {
       "@type": "SpeakableSpecification",
       "cssSelector": ["#faq", "#hero .d1", "#hero .d2", ".section-title"]
     },
-    "url": "https://zukufiberuganda.vercel.app/"
+    "url": "https://zuku-seven.vercel.app/"
   };
 
   const articleJsonLd = {
@@ -74,12 +74,12 @@ export default function Home() {
     "publisher": {
       "@type": "Organization",
       "name": "Zuku Fiber Uganda",
-      "logo": { "@type": "ImageObject", "url": "https://zukufiberuganda.vercel.app/logo.png" }
+      "logo": { "@type": "ImageObject", "url": "https://zuku-seven.vercel.app/logo.png" }
     },
     "datePublished": "2024-01-01",
     "dateModified": "2026-03-29",
-    "mainEntityOfPage": "https://zukufiberuganda.vercel.app",
-    "image": "https://zukufiberuganda.vercel.app/og-image.png"
+    "mainEntityOfPage": "https://zuku-seven.vercel.app",
+    "image": "https://zuku-seven.vercel.app/og-image.png"
   };
 
   return (

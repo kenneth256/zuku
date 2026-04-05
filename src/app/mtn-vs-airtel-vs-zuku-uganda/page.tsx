@@ -28,12 +28,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'MTN vs Airtel vs Zuku Fiber Uganda 2026 | Full Comparison',
       description: 'Which ISP is actually better for your home? We break down the true costs and performance of Uganda\'s top providers.',
-      url: 'https://zukufiberuganda.vercel.app/mtn-vs-airtel-vs-zuku-uganda',
+      url: 'https://zuku-seven.vercel.app/mtn-vs-airtel-vs-zuku-uganda',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/mtn-vs-airtel-vs-zuku-uganda',
+      canonical: 'https://zuku-seven.vercel.app/mtn-vs-airtel-vs-zuku-uganda',
     },
   };
 }
@@ -69,7 +69,7 @@ export default function MtnAirtelZukuComparisonPage() {
           "latitude": 0.3476,
           "longitude": 32.5825
         },
-        "url": "https://zukufiberuganda.vercel.app/"
+        "url": "https://zuku-seven.vercel.app/"
       },
       {
         "@type": "BreadcrumbList",
@@ -78,13 +78,13 @@ export default function MtnAirtelZukuComparisonPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "MTN vs Airtel vs Zuku Uganda",
-            "item": "https://zukufiberuganda.vercel.app/mtn-vs-airtel-vs-zuku-uganda"
+            "item": "https://zuku-seven.vercel.app/mtn-vs-airtel-vs-zuku-uganda"
           }
         ]
       },

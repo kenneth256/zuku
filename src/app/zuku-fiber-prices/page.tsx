@@ -24,12 +24,12 @@ export function generateMetadata(): Metadata {
       title: 'Zuku Fiber Internet Prices Uganda 2026 — Official Plan List',
       description:
         'Official Zuku Fiber Uganda pricing. Unlimited fiber from UGX 75,000/month. Free installation, free router, 100+ TV channels on every plan.',
-      url: 'https://zukufiberuganda.vercel.app/zuku-fiber-prices',
+      url: 'https://zuku-seven.vercel.app/zuku-fiber-prices',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/zuku-fiber-prices',
+      canonical: 'https://zuku-seven.vercel.app/zuku-fiber-prices',
     },
   };
 }
@@ -122,8 +122,8 @@ export default function ZukuFiberPricesPage() {
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Zuku Fiber Prices', 'item': 'https://zukufiberuganda.vercel.app/zuku-fiber-prices' },
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Zuku Fiber Prices', 'item': 'https://zuku-seven.vercel.app/zuku-fiber-prices' },
         ],
       },
     ],

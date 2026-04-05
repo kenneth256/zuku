@@ -26,12 +26,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Ultra-Fast Fiber Internet in Kololo Kampala 2026 | Zuku Fiber',
       description: 'The standard for high-speed internet in Kololo. Unlimited data, low latency, and 24/7 priority support.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-kololo',
+      url: 'https://zuku-seven.vercel.app/internet-in-kololo',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/internet-in-kololo',
+      canonical: 'https://zuku-seven.vercel.app/internet-in-kololo',
     },
   };
 }
@@ -67,7 +67,7 @@ export default function InternetInKololoPage() {
           "latitude": 0.3292,
           "longitude": 32.5936
         },
-        "url": "https://zukufiberuganda.vercel.app/internet-in-kololo"
+        "url": "https://zuku-seven.vercel.app/internet-in-kololo"
       },
       {
         "@type": "BreadcrumbList",
@@ -76,13 +76,13 @@ export default function InternetInKololoPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Internet in Kololo",
-            "item": "https://zukufiberuganda.vercel.app/internet-in-kololo"
+            "item": "https://zuku-seven.vercel.app/internet-in-kololo"
           }
         ]
       },

@@ -7,7 +7,7 @@ export function generateMetadata(): Metadata {
     title: 'Terms of Service | Zuku Fiber Uganda',
     description: 'Terms and Conditions regarding the use of Zuku Fiber Uganda unlimited fiber internet, installation, and network policies.',
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/terms',
+      canonical: 'https://zuku-seven.vercel.app/terms',
     },
   };
 }

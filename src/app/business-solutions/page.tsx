@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Business Fiber Internet Uganda | Dedicated Broadband for Kampala Companies',
     description: 'Dedicated business internet, SME broadband, and enterprise connectivity solutions for Kampala businesses — guaranteed uptime, symmetrical speeds, 24/7 local support.',
-    url: 'https://zukufiberuganda.vercel.app/business-solutions',
+    url: 'https://zuku-seven.vercel.app/business-solutions',
     siteName: 'Zuku Fiber Uganda',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://zukufiberuganda.vercel.app/business-solutions',
+    canonical: 'https://zuku-seven.vercel.app/business-solutions',
   },
 };
 
@@ -111,12 +111,12 @@ export default function BusinessSolutionsPage() {
     '@type': 'WebPage',
     'name': 'Zuku Fiber Business Solutions — Enterprise & SME Internet in Uganda',
     'description': 'Zuku Fiber Uganda provides dedicated business internet, SME broadband, managed network services, VPN solutions, and cloud connectivity for businesses across Kampala, Uganda.',
-    'url': 'https://zukufiberuganda.vercel.app/business-solutions',
+    'url': 'https://zuku-seven.vercel.app/business-solutions',
     'breadcrumb': {
       '@type': 'BreadcrumbList',
       'itemListElement': [
-        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app' },
-        { '@type': 'ListItem', 'position': 2, 'name': 'Business Solutions', 'item': 'https://zukufiberuganda.vercel.app/business-solutions' },
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Business Solutions', 'item': 'https://zuku-seven.vercel.app/business-solutions' },
       ],
     },
     'mainEntity': {
@@ -126,9 +126,9 @@ export default function BusinessSolutionsPage() {
       'serviceType': 'Business Internet Service Provider',
       'provider': {
         '@type': 'TelecommunicationsCompany',
-        '@id': 'https://zukufiberuganda.vercel.app/#organization',
+        '@id': 'https://zuku-seven.vercel.app/#organization',
         'name': 'Zuku Fiber Uganda',
-        'url': 'https://zukufiberuganda.vercel.app',
+        'url': 'https://zuku-seven.vercel.app',
       },
       'areaServed': {
         '@type': 'AdministrativeArea',

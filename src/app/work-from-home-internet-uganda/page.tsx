@@ -27,12 +27,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet for Working From Home Uganda 2026 | Zuku Fiber',
       description: 'Zero-throttle fiber internet for remote workers in Uganda. Symmetrical speeds, 99.9% uptime, 5ms latency. From UGX 75,000/month with free installation.',
-      url: 'https://zukufiberuganda.vercel.app/work-from-home-internet-uganda',
+      url: 'https://zuku-seven.vercel.app/work-from-home-internet-uganda',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/work-from-home-internet-uganda',
+      canonical: 'https://zuku-seven.vercel.app/work-from-home-internet-uganda',
     },
   };
 }
@@ -68,7 +68,7 @@ export default function WorkFromHomeInternetUgandaPage() {
           "latitude": 0.3476,
           "longitude": 32.5825
         },
-        "url": "https://zukufiberuganda.vercel.app/"
+        "url": "https://zuku-seven.vercel.app/"
       },
       {
         "@type": "BreadcrumbList",
@@ -77,13 +77,13 @@ export default function WorkFromHomeInternetUgandaPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Work From Home Internet Uganda",
-            "item": "https://zukufiberuganda.vercel.app/work-from-home-internet-uganda"
+            "item": "https://zuku-seven.vercel.app/work-from-home-internet-uganda"
           }
         ]
       },

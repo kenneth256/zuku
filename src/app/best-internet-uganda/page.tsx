@@ -28,12 +28,12 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet Providers in Uganda 2026 | Zuku Fiber',
       description: 'Compare the best internet providers in Uganda 2026. Zuku Fiber offers unlimited fiber from UGX 75,000/month — no caps, no throttling.',
-      url: 'https://zukufiberuganda.vercel.app/best-internet-uganda',
+      url: 'https://zuku-seven.vercel.app/best-internet-uganda',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
     alternates: {
-      canonical: 'https://zukufiberuganda.vercel.app/best-internet-uganda',
+      canonical: 'https://zuku-seven.vercel.app/best-internet-uganda',
     },
   };
 }
@@ -70,7 +70,7 @@ export default function BestInternetUgandaPage() {
           "latitude": 0.3476,
           "longitude": 32.5825
         },
-        "url": "https://zukufiberuganda.vercel.app/"
+        "url": "https://zuku-seven.vercel.app/"
       },
       {
         "@type": "BreadcrumbList",
@@ -79,13 +79,13 @@ export default function BestInternetUgandaPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zukufiberuganda.vercel.app/"
+            "item": "https://zuku-seven.vercel.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Best Internet in Uganda",
-            "item": "https://zukufiberuganda.vercel.app/best-internet-uganda"
+            "item": "https://zuku-seven.vercel.app/best-internet-uganda"
           }
         ]
       },

@@ -11,11 +11,11 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Best Internet in Najjera Kampala 2026 | Zuku Fiber',
       description: 'Unlimited fiber internet in Najjera. Free installation, no data caps, 99.9% uptime.',
-      url: 'https://zukufiberuganda.vercel.app/internet-in-najjera',
+      url: 'https://zuku-seven.vercel.app/internet-in-najjera',
       siteName: 'Zuku Fiber Uganda',
       type: 'website',
     },
-    alternates: { canonical: 'https://zukufiberuganda.vercel.app/internet-in-najjera' },
+    alternates: { canonical: 'https://zuku-seven.vercel.app/internet-in-najjera' },
   };
 }
 
@@ -40,13 +40,13 @@ export default function InternetInNajjeraPage() {
         'address': { '@type': 'PostalAddress', 'streetAddress': 'Najjera Road', 'addressLocality': 'Najjera, Kampala', 'addressCountry': 'Uganda' },
         'telephone': '+256775260196',
         'geo': { '@type': 'GeoCoordinates', 'latitude': 0.3712, 'longitude': 32.6278 },
-        'url': 'https://zukufiberuganda.vercel.app/internet-in-najjera',
+        'url': 'https://zuku-seven.vercel.app/internet-in-najjera',
       },
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zukufiberuganda.vercel.app/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Najjera', 'item': 'https://zukufiberuganda.vercel.app/internet-in-najjera' },
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://zuku-seven.vercel.app/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Internet in Najjera', 'item': 'https://zuku-seven.vercel.app/internet-in-najjera' },
         ],
       },
       {
