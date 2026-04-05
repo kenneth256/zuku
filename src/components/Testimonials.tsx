@@ -56,7 +56,7 @@ const aggregateRatingSchema = {
     'bestRating': '5',
     'worstRating': '1',
   },
-  'review': TESTIMONIALS.slice(0, 3).map((t) => ({
+  'review': TESTIMONIALS.map((t) => ({
     '@type': 'Review',
     'reviewRating': { '@type': 'Rating', 'ratingValue': t.rating, 'bestRating': '5' },
     'author': { '@type': 'Person', 'name': t.name },
@@ -92,17 +92,17 @@ export default function Testimonials() {
 
         <div className={styles.grid}>
           {TESTIMONIALS.map((t, i) => (
-            <div key={i} className={`card ${styles.card}`} itemScope itemType="https://schema.org/Review">
+            <div key={i} className={`card ${styles.card}`}>
               <div className={styles.stars}>
                 {[1,2,3,4,5].map(s => <span key={s} style={{ color: '#fff200' }}>★</span>)}
               </div>
-              <p className={styles.quote} itemProp="reviewBody">&quot;{t.quote}&quot;</p>
+              <p className={styles.quote}>&quot;{t.quote}&quot;</p>
               <div className={styles.author}>
                 <div className={styles.avatar} style={{ background: `${t.color}18`, border: `1px solid ${t.color}30`, color: t.color }}>
                   {t.initials}
                 </div>
                 <div>
-                  <div className={styles.name} itemProp="author">{t.name}</div>
+                  <div className={styles.name}>{t.name}</div>
                   <div className={styles.role}>{t.role}</div>
                 </div>
               </div>
