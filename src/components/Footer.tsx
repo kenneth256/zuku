@@ -13,7 +13,7 @@ const COLS = [
   {
     heading: 'Support',
     links: [
-      { label: 'Help Center & FAQ', href: '/best-internet-uganda#faq' },
+      { label: 'Help Center & FAQ', href: '/best-internet-in-uganda#faq' },
       { label: 'Talk to Sales', href: 'tel:+2560775260196' },
       { label: 'support@zukufiber.co.ug', href: 'mailto:support@zukufiber.co.ug' },
       { label: 'Diamond Trust Bldg, KLA', href: '/contact' },
@@ -96,10 +96,11 @@ export default function Footer() {
           <div>
             <h3 className={styles.seoColHead}>Internet Guides &amp; Resources</h3>
             <ul className={styles.seoLinks}>
-              <li><a href="/best-internet-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Best Internet in Uganda</a></li>
-              <li><a href="/cheapest-internet-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Cheapest WiFi Plans</a></li>
+              <li><a href="/best-internet-in-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Best Internet in Uganda</a></li>
+              <li><a href="/fastest-internet-in-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Fastest Fiber Speeds</a></li>
+              <li><a href="/cheapest-home-internet-in-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Cheapest Home WiFi</a></li>
+              <li><a href="/free-internet-vpn-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Free VPNs vs Fiber</a></li>
               <li><a href="/mtn-vs-airtel-vs-zuku-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>MTN vs Airtel vs Zuku</a></li>
-              <li><a href="/work-from-home-internet-uganda" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Work From Home Internet</a></li>
               <li><a href="/zuku-fiber-prices" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Zuku Price Guide 2026</a></li>
               <li><a href="/business-solutions" className={styles.seoLink} style={{ display: 'inline-flex', padding: '0.25rem 0', minHeight: '44px', alignItems: 'center' }}>Business &amp; Office Fiber</a></li>
             </ul>
