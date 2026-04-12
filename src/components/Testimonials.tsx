@@ -62,6 +62,13 @@ const aggregateRatingSchema = {
     'author': { '@type': 'Person', 'name': t.name },
     'reviewBody': t.quote,
   })),
+  'offers': {
+    '@type': 'Offer',
+    'price': '75000',
+    'priceCurrency': 'UGX',
+    'availability': 'https://schema.org/InStock',
+    'url': 'https://zuku-seven.vercel.app/zuku-fiber-prices'
+  }
 };
 
 export default function Testimonials() {

@@ -124,7 +124,7 @@ export default function InternetInNaguruPage() {
               Fast Unlimited <span className="grad-g">Fiber Internet in Naguru</span> — Zuku Fiber Uganda
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Experience the fastest internet in Naguru with zero throttling. Zuku Fiber brings reliable, world-class connectivity to your doorstep for work, study, and play.
+              Zuku Fiber provides the premier unlimited fiber-optic internet connection for Naguru residents. By delivering dedicated, symmetrical speeds directly to your home or office, you ensure 100% stable performance with strictly zero data caps and no throttling. Discover our high-speed plans with free installation, a premium Wi-Fi router, and uninterrupted remote work reliability perfectly tailored for Naguru.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Check Naguru Coverage</Link>

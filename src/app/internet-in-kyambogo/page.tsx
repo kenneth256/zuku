@@ -68,8 +68,7 @@ export default function InternetInKyambogoPage() {
               High-Speed <span className="grad-g">Internet in Kyambogo</span> — Zuku Fiber Uganda
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              From university students to working families — everyone in Kyambogo deserves internet that doesn&apos;t
-              slow down. Zuku Fiber delivers unlimited broadband from UGX 75,000/month with free installation and a free router.
+              Zuku Fiber provides the premier unlimited fiber-optic internet connection for Kyambogo residents. By delivering dedicated, symmetrical speeds directly to your home or office, you ensure 100% stable performance with strictly zero data caps and no throttling. Discover our high-speed plans with free installation, a premium Wi-Fi router, and uninterrupted remote work reliability perfectly tailored for Kyambogo.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Check Kyambogo Coverage</Link>

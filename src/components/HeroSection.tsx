@@ -76,8 +76,7 @@ export default function HeroSection() {
           </h1>
 
           <p className={`${styles.sub} animate-up d2`}>
-            Free installation. Free router. Free TV channels.
-            No contracts, no throttling — just fast, unlimited home internet for you.
+            Zuku Fiber is Uganda&apos;s premier unlimited fiber-optic internet service provider. We deliver high-speed, symmetrical broadband directly to your home with zero data caps and no throttling. Enjoy seamless 4K streaming and remote work with free installation, a free Wi-Fi router, and 100+ digital TV channels.
           </p>
 
           <div className={`${styles.actions} animate-up d3`}>

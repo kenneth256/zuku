@@ -68,8 +68,7 @@ export default function InternetInKiwatulePage() {
               High-Speed <span className="grad-g">Internet in Kiwatule</span> — Zuku Fiber Uganda
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Kiwatule is growing fast — and fast internet keeps pace with it. Zuku Fiber brings unlimited broadband
-              directly to your home along Kiwatule Road and the surrounding estates, starting at UGX 75,000/month.
+              Zuku Fiber provides the premier unlimited fiber-optic internet connection for Kiwatule residents. By delivering dedicated, symmetrical speeds directly to your home or office, you ensure 100% stable performance with strictly zero data caps and no throttling. Discover our high-speed plans with free installation, a premium Wi-Fi router, and uninterrupted remote work reliability perfectly tailored for Kiwatule.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Check Kiwatule Coverage</Link>

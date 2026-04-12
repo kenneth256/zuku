@@ -125,7 +125,7 @@ export default function WorkFromHomeInternetUgandaPage() {
               Best Internet for <span className="grad-g">Working From Home</span> Uganda 2026
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Zero throttling. Symmetrical speeds. 5ms latency. 99.9% uptime. Zuku Fiber is the only internet Uganda remote workers can truly rely on — from UGX 75,000/month.
+              Secure the most reliable work from home internet in Uganda. Zuku Fiber's symmetrical connectivity ensures your Zoom video calls and crucial remote file transfers never abruptly drop due to throttling. Empower your home office with our dedicated fiber-optic speeds, 99.9% uptime SLA, completely unlimited monthly bandwidth, and complimentary professional installation today.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Get Connected via WhatsApp</Link>

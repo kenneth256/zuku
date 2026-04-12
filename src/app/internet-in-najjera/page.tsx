@@ -68,8 +68,7 @@ export default function InternetInNajjeraPage() {
               High-Speed <span className="grad-g">Internet in Najjera</span> — Zuku Fiber Uganda
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Najjera is one of Kampala&apos;s fastest-growing residential zones — and Zuku Fiber is here to keep every
-              household connected. Get unlimited broadband from UGX 75,000/month, with free installation and no data caps.
+              Zuku Fiber provides the premier unlimited fiber-optic internet connection for Najjera residents. By delivering dedicated, symmetrical speeds directly to your home or office, you ensure 100% stable performance with strictly zero data caps and no throttling. Discover our high-speed plans with free installation, a premium Wi-Fi router, and uninterrupted remote work reliability perfectly tailored for Najjera.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Check Najjera Coverage</Link>

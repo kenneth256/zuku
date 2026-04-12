@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Zuku Fiber Uganda | Unlimited Home Internet from UGX 75,000/mo',
+  title: 'Get Zuku Fiber Uganda | Best Unlimited Home Internet',
   description: 'Zuku Fiber delivers unlimited home internet in Kampala from UGX 75,000/month. Free installation, free router, 99.9% uptime. Get connected today.',
   keywords: 'Zuku Fiber Uganda, fiber internet Uganda, unlimited internet Kampala, best internet Uganda, cheapest fiber internet Uganda, home internet Kampala, Zuku fiber plans Uganda',
   alternates: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     'format-detection': 'telephone=no',
   },
   openGraph: {
-    title: 'Zuku Fiber Uganda | Unlimited Home Internet from UGX 75,000/mo',
+    title: 'Get Zuku Fiber Uganda | Best Unlimited Home Internet',
     description: 'Zuku Fiber delivers unlimited home internet in Kampala from UGX 75,000/month. Free installation, free router, 99.9% uptime. Get connected today.',
     url: 'https://zuku-seven.vercel.app',
     siteName: 'Zuku Fiber Uganda',
@@ -49,10 +49,11 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'TelecommunicationsCompany',
+      '@type': ['Organization', 'LocalBusiness', 'TelecommunicationsCompany'],
       '@id': 'https://zuku-seven.vercel.app/#organization',
       'name': 'Zuku Fiber Uganda',
       'alternateName': 'Zuku Uganda',
+      'telephone': '+256775260196',
       'url': 'https://zuku-seven.vercel.app',
       'logo': {
         '@type': 'ImageObject',
@@ -150,7 +151,12 @@ const jsonLd = {
       'name': 'Zuku Fiber Uganda — Best Unlimited Home Internet in Uganda',
       'description': 'Zuku Fiber Uganda: Uganda\'s premier fiber-optic internet service provider. Unlimited broadband starting from UGX 75,000/month — free installation, free router, 24/7 local support in Kampala.',
       'publisher': { '@id': 'https://zuku-seven.vercel.app/#organization' },
-      'inLanguage': 'en-UG'
+      'inLanguage': 'en-UG',
+      'potentialAction': {
+        '@type': 'SearchAction',
+        'target': 'https://zuku-seven.vercel.app/?s={search_term_string}',
+        'query-input': 'required name=search_term_string'
+      }
     },
     {
       '@type': 'BreadcrumbList',

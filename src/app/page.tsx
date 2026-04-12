@@ -79,7 +79,8 @@ export default function Home() {
     "datePublished": "2024-01-01",
     "dateModified": "2026-03-29",
     "mainEntityOfPage": "https://zuku-seven.vercel.app",
-    "image": "https://zuku-seven.vercel.app/og-image.png"
+    "image": "https://zuku-seven.vercel.app/og-image.png",
+    "url": "https://zuku-seven.vercel.app/"
   };
 
   return (

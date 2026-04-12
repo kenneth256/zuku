@@ -25,6 +25,7 @@ const COLS = [
       { label: 'About Zuku', href: '/about' },
       { label: 'Business Solutions', href: '/business-solutions' },
       { label: 'Compare Speeds', href: '/mtn-vs-airtel-vs-zuku-uganda' },
+      { label: 'Google Business Profile', href: 'https://maps.google.com/?q=Zuku+Fiber+Uganda' },
       { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Terms of Use', href: '/terms' },
     ],

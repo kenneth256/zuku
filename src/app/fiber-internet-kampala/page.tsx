@@ -130,7 +130,7 @@ export default function FiberInternetKampalaPage() {
               <span className="grad-g">Fiber Internet in Kampala</span> — Fast, Unlimited & Available Now
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Experience the best WiFi in Kampala with Zuku Fiber. We bring world-class speeds and strictly unlimited data to your doorstep in Kololo, Ntinda, Bugolobi, and beyond.
+              Zuku Fiber is Kampala's leading provider of ultra-fast fiber-optic internet. We guarantee symmetrical speeds and completely unlimited data, ensuring your connection never drops when you need it most. Get started today with absolutely free installation, zero hardware fees, and a complimentary dual-band Wi-Fi router for flawless 4K streaming and gaming across Kampala.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Check Availability</Link>

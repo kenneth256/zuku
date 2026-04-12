@@ -149,8 +149,7 @@ export default function ZukuFiberPricesPage() {
               Zuku Fiber <span className="grad-g">Prices Uganda</span> 2026
             </h1>
             <p className="section-sub animate-up d3" style={{ margin: '0 auto 2.5rem' }}>
-              Unlimited fiber from <strong>UGX 75,000/month</strong>. No data caps, no throttling, no hidden fees.
-              Free installation + free router on every plan.
+              Explore the full breakdown of official Zuku Fiber internet prices in Uganda for 2026. From our budget-friendly 25 Mbps base plan to the ultra-fast 200 Mbps gigabit tier, every single package guarantees absolutely unlimited data with zero throttling. Furthermore, all our monthly internet subscriptions proudly feature free installation and a complimentary dual-band Wi-Fi router.
             </p>
             <div className="animate-up d4" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="https://wa.me/2560775260196" className="btn btn-primary">Order via WhatsApp</Link>
